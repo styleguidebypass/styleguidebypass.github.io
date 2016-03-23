@@ -1,0 +1,42 @@
+{
+  "base": "semantic/",
+  "paths": {
+    "source": {
+      "config": "src/theme.config",
+      "definitions": "src/definitions/",
+      "site": "src/site/",
+      "themes": "src/themes/"
+    },
+    "output": {
+      "packaged": "out/",
+      "uncompressed": "out/components/",
+      "compressed": "out/components/",
+      "themes": "out/themes/"
+    },
+    "clean": "dist/"
+  },
+  "permission": false,
+  "rtl": "No",
+  "components": [
+    "flag",
+    "image",
+    "rail",
+    "reveal",
+    "segment",
+    "ad",
+    "card",
+    "comment",
+    "feed",
+    "item",
+    "statistic",
+    "embed",
+    "rating",
+    "shape",
+    "sidebar",
+    "sticky",
+    "api",
+    "state",
+    "visibility"
+  ],
+  "version": "2.1.4"
+}

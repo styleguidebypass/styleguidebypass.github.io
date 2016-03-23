@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <title>Bypass Live style guide</title>
+    <meta name="description" content="Flat UI Kit Free is a Twitter Bootstrap Framework design and Theme, this responsive framework includes a PSD and HTML version."/>
+    <meta name="viewport" content="width=1000, initial-scale=1.0, maximum-scale=1.0">
+   
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/angular.min.js"></script>
+    <script src="semantic/dist/js/semantic.js"></script>
+
+    <link rel="shortcut icon" type="image/ico" href="favicon32.png">
+    <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.css">
+    <link rel="stylesheet" type="text/css" href="demo_layout.css">
+    <link rel="stylesheet" type="text/css" href="customized.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="js/example.js"></script>
+    <script src="https://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.13.4.js"></script>
+  </head>
+  <body>
+<div class="container">
+      <div class="demo-headline">
+          <h2>LIVE UI KIT </h2>
+          <small>LIVE STYLE GUIDE FOR ADMIN</small>
+          
+          <div class="ui tabular menu">
+              <a href="index.html" class="item">Basic elements</a>
+              <a href="setting.html" class="item">Global Setting</a>
+              <a href="tables.html" class="item">Tables</a>
+              <a href="form.html" class="item">Forms</a>
+              <a href="#" class="active item">Modals</a>
+              <a href="pages.html" class="item">Pages</a>
+              <a href="examples.html" class="item">Ideal Examples</a>
+           </div>
+          <h1>Multiple Modals</h1>
+      </div> <!-- /demo-headline -->
+
+    <div class="row">
+       <div class="content">
+
+          <div class="ui united modal" id="modal1">
+            <div class="header">Modal 1</div>
+            <div class="content">Some info will go here...</div>
+            <div class="actions">
+              <div class="ui blue labeled icon button" id="btn-modal-1">Close me and Call modal 2 <i class="arrow sign right icon"></i></div>
+            </div>
+          </div>
+
+          <div class="ui united fullscreen modal" id="modal2">
+           <div class="header"> Modal 2 </div>
+           <div class="content">If you want to close previous modals before show the next modal, you should disable the parameter <b>'allowMultiple'</b>.  </div>
+           <div class="actions">
+              <div class="ui red right labeled icon button" id="btn-modal-2"><i class="arrow sign right icon"></i>Close me and Call modal 3</div>
+           </div>
+          </div>
+
+
+          <div class="ui united small modal" id="modal3">
+            <i class="close icon"></i>
+           <div class="header"> Modal 3 </div>
+           <div class="content modal"> 
+         
+               <form class="ui form">
+                <div class="field">
+                  <label>Name</label>
+                  <input type="text" name="Item name" placeholder="Item name">
+                </div><!--field end-->
+                <div class="field">
+                  <label>Description</label>
+                  <textarea rows="2"></textarea>
+                </div><!--field end-->
+                <div class="field">
+                  <label>Tax Rate</label>
+                  <input type="text" name="Item name" placeholder="Tax Rate">
+                </div><!--field end-->
+              </form><!--form end-->
+
+           </div><!--content-->
+           <div class="actions">
+            <div class="ui positive right labeled icon close button" id="btn-modal-3"> <i class="checkmark icon"></i> Save All and Finish. </div> </div>
+          </div>
+
+          <!-- Bored Modal -->
+          <div class="ui small modal" id="modal4">
+           <div class="header"> Don't talk with me! </div>
+           <div class="content"> :'( darkness my only old friend... <br> I don't have the class <b>.united</b></div>
+           <div class="actions"><div class="ui secondary close button"> Close me! </div></div>
+          </div>
+
+          <div class="row">
+            <h4>Call Modal 1, 2 and 3</h4>
+            <button data-modal="modal1" id="call-modals" class="ui primary button">Run Code</button>
+            <h4>Call Modal 2 and 3 after it</h4>
+            <button data-modal="modal2" id="call-modal-2" class="ui orange button">Run Code</button>
+            <h4>Call Modal 3 only</h4>
+            <button data-modal="modal3" id="call-modal-3" class="ui green button">Run Code</button>
+            <h4>Call Bored Modal Alone in the dark</h4>
+            <button data-modal="modal4" id="call-modal-4" class="ui secondary button">Run Code</button>
+          </div>
+
+
+      </div><!--content ends-->
+    </div><!--row ends-->
+
+    <div class="row">
+       <div class="content">
+          <div class="ui united small modal" id="modal3">
+            <i class="close icon"></i>
+           <div class="header"> Modal form </div>
+           <div class="content modal"> 
+               <form class="ui form">
+                <div class="field">
+                  <label>Name</label>
+                  <input type="text" name="Item name" placeholder="Item name">
+                </div><!--field end-->
+                <div class="field">
+                  <label>Description</label>
+                  <textarea rows="2"></textarea>
+                </div><!--field end-->
+                <div class="field">
+                  <label>Tax Rate</label>
+                  <input type="text" name="Item name" placeholder="Tax Rate">
+                </div><!--field end-->
+              </form><!--form end-->
+           </div><!--content-->
+
+           <div class="actions">
+              <div class="ui positive right labeled icon close button" id="btn-modal-3"> <i class="checkmark icon"></i> Save All and Finish. 
+              </div>
+           </div><!--actions-->
+          </div><!--row-->
+
+
+          <!--modal with dropdowns & radio buttons-->
+          <div class="ui united small modal" id="modal5">
+          <i class="close icon"></i>
+           <div class="header"> Modal form </div>
+           <div class="content modal"> 
+              <form class="ui form">
+
+                <div class="field">
+                  <h4 class="form-info-bold">You are choosing to remove the stock item from this location.</h4>
+                  <p>What would you like to do with the removed inventory?</p>
+                </div><!--field end-->
+
+                <div class="field">
+                  <div class="ui radio checkbox float-left">
+                    <input type="radio" name="frequency" checked="checked">
+                    <label>Move inventory</label>
+                  </div>
+                  <div class="ui fluid search selection simple dropdown float-left dropdown-sm">
+                     <input type="hidden" name="category">
+                     <i class="dropdown icon"></i>
+                     <div class="default text">Select Category</div>
+                     <div class="menu">
+                      <div class="item" data-value="1">Report 1</div>
+                    </div><!--menu-->
+                  </div><!--ui-->
+
+                  <div class="ui radio checkbox float-left">
+                    <input type="radio" name="frequency" checked="checked">
+                    <label>Waste inventory</label>
+                  </div>
+                </div><!--field-->
+              </form><!--ui form end-->
+           </div><!--content ends-->
+           
+           <div class="actions">
+            <div class="ui positive right labeled icon close button" id="btn-modal-5"><i class="checkmark icon"></i>Save</div>
+           </div><!--actions-->
+        
+        </div><!--modal ends-->
+
+
+          <div class="row">
+            <h4>Modal with dropdowns</h4>
+            <button data-modal="modal3" id="call-modal-3" class="ui green button">Form</button>
+
+            <h4>Modal with dropdown & radio selection</h4>
+            <button data-modal="modal5" id="call-modal-5" class="ui primary button">dropdown & radio button</button>
+          </div>
+
+      </div><!--content ends-->
+    </div><!--row ends-->
+
+
+
+
+
+</div><!-- /container -->
+
+<script>
+// attach events to buttons
+
+$('.close.icon, .close.button, .positive.button, .ui.dimmer').click(function(){
+  $('.ui.modal').modal('hide')
+  $('body').dimmer('hide');
+  });
+
+//multiple modals
+// all first 3 modals will be called and showed but 'BORED MODAL' won't. Only when you click on the last button
+// .united is a custom class and you can use anything.
+$('.united.modal').modal({
+  // this parameter will enable/disable the closing for the previous .united modals when the next will be opened :)
+  allowMultiple: false,
+});
+// attach events
+// haven't attached events over button of modal 3
+$('#modal1').modal('attach events', '#call-modals');
+$('#modal2').modal('attach events', '#btn-modal-1');
+$('#modal3').modal('attach events', '#btn-modal-2');
+// disable the comment bellow to call the modal 4 after click on button into modal 3
+//$('#modal4').modal('attach events', '#btn-modal-3');
+// Individual events - unecessary but i does it.
+$('.row .button').on('click', function(){
+  // using the attribute data-modal to identify for what modal the button references
+  modal = $(this).attr('data-modal');
+  // creating the individual event attached to click over button
+  $('#'+modal+'.modal').modal('show');
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Bypass Live style guide</title>
+    <meta name="description" content="Flat UI Kit Free is a Twitter Bootstrap Framework design and Theme, this responsive framework includes a PSD and HTML version."/>
+    <meta name="viewport" content="width=1000, initial-scale=1.0, maximum-scale=1.0">
+   
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/angular.min.js"></script>
+    <script src="semantic/dist/js/semantic.js"></script>
+    <script src="js/jquery-ui.js"></script>
+
+    <link rel="shortcut icon" type="image/ico" href="favicon32.png">
+    <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.css">
+    <link rel="stylesheet" type="text/css" href="demo_layout.css">
+    <link rel="stylesheet" type="text/css" href="customized.css">
+    <!--fonts-->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="js/example.js"></script>
+    <script src="https://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.13.4.js"></script>
+</head>
+<body>
+<div class="container">
+  <div class="demo-headline">
+    <h2>LIVE UI KIT/Testing </h2>
+    <small>LIVE STYLE GUIDE FOR ADMIN</small>
+    <div class="ui tabular menu">
+          <a href="#" class="active item">Basic elements</a>
+          <a href="setting.html" class="item">Global Setting</a>
+          <a href="tables.html" class="item">Tables</a>
+          <a href="form.html" class="item">Forms</a>
+          <a href="modal.html" class="item">Modals</a>
+          <a href="pages.html" class="item">Pages</a>
+          <a href="examples.html" class="item">Ideal Examples</a>
+    </div><!--ui tab-->
+    <h1>Basic elements</h1>
+  </div> <!-- /demo-headline -->
+
+  <div class="row">
+  <h3>Buttons</h3>
+    <div class="demo-content">
+      <div class="btn-sec">
+            <button class="ui primary button">Action</button>
+            <button class="ui cancel button">Cancel</button>
+            <button class="ui green button">Submit</button>
+            <!--need to figureout with the dropdown does not work-->
+            <div class="ui primary teal buttons actions">
+                <div class="ui simple dropdown blue right labeled icon button" tabindex="0">Bulk action<i class="dropdown right icon"></i>
+                    <div class="menu">
+                      <div class="item">Edit</div>
+                      <div class="item">Remove</div>
+                      <div class="item">Hide</div>
+                    </div><!--menu-->
+                </div><!--uisimple-->
+            </div><!--ui teal buttons ends-->
+       </div><!--btn-sec-->
+       <div class="btn-sec">
+            <div class="actions">
+                <div class="ui green labeled icon button"><i class="plus left icon"></i>Create new</div>
+            </div><!--actions-->
+            <h4>Disabled button</h4>  
+            <button class="ui disabled primary button">Action</button>
+            <h4>Publish Menus button</h4>  
+            <div class="actions">
+                <div class="ui primary labeled icon button toggle pre_btn_progress"><i class="arrow up icon"></i>Publish Menus</div>
+                <div class="ui primary labeled icon loading button btn_progress"><i class="arrow up icon"></i>Processing</div>
+            </div><!--actions-->
+         </div><!--btn-sec-->
+         <div class="btn-sec">
+                <button class="ui icon green button"><i class="checkmark icon"></i></button>
+                <button class="ui icon cancel button"><i class="remove icon"></i></button>
+                <button class="btn-text">text button</button>
+         </div>
+         <div class="btn-sec">
+              <h4>Icon Button</h4>
+              <button class="add-on ui icon primary button"><i class="calendar outline icon"></i></button>
+              <button class="add-on ui icon grey button"><i class="edit icon"></i></button>
+         </div><!--btn-sec-->
+      </div><!--demo-content ends-->
+   </div><!--row ends-->
+      
+   <div class="row">
+        <h3>checkbox & radio button</h3>
+        <div class="demo-content">
+            <div class="ui checkbox">
+              <input type="checkbox" name="example">
+              <label>Form checkbox</label>
+            </div>
+        </div><!--demo-->
+        <div class="demo-content">   
+            <div class="ui disabled checkbox">
+              <input type="checkbox" disabled="disabled">
+              <label>Disabled</label>
+            </div>
+        </div><!--demo-->
+        <div class="demo-content">
+            <div class="ui form">
+              <div class="inline fields">
+                <label>How often do you use checkboxes?</label>
+                <div class="field">
+                  <div class="ui radio checkbox">
+                    <input type="radio" name="frequency" checked="checked">
+                    <label>Once a week</label>
+                  </div>
+                </div><!--field-->
+                <div class="field">
+                  <div class="ui radio checkbox">
+                    <input type="radio" name="frequency">
+                    <label>2-3 times a week</label>
+                  </div>
+                </div><!--field-->
+               </div>
+            </div><!--ui-->
+        </div><!--demo-content-->
+   </div><!--row-->
+   <div class="row">
+      <h3>labels</h3>
+      <div class="demo-content">
+         <div class="ui blue labels">
+              <a class="ui label">
+                primary <i class="icon close"></i>
+              </a>
+              <a class="ui label">
+                primary
+                <div class="detail">22</div>
+              </a>
+              <a class="ui label">
+                primary
+              </a>
+         </div><!--ui-->
+         <div class="ui green labels margin-top">
+              <a class="ui label">100%</a>
+         </div>
+         <div class="ui red labels margin-top">
+              <a class="ui label">0%</a>
+         </div>
+         <div class="ui yellow labels margin-top">
+              <a class="ui label">30%</a>
+         </div>
+      </div><!--demo-->
+   </div><!--row-->
+   <div class="row">
+     <h3>Input</h3>
+     <div class="demo-content">
+         <div class="ui icon input">
+              <input type="text" placeholder="Search...">
+              <i class="search icon"></i>
+         </div>
+         <div class="ui right labeled input">
+              <div class="ui label">$</div>
+              <input type="text" placeholder="Amount">
+              <div class="ui basic label">.00</div>
+          </div>
+     </div><!--demo-content-->
+        <!--datepicker-->
+     <h3>Date Picker</h3>
+     <div class="demo-content">
+          <div class="ui icon input date-picker"><input type="text" placeholder="Date" class="datepicker">
+          </div>
+     </div><!--demo-->
+   </div> <!--row -->
+
+   <div class="row">
+     <h3>Dropdown</h3>
+       <div class="demo-content">
+          <select class="ui search dropdown">
+            <option value="">State</option>
+            <option value="AL">Alabama</option>
+            <option value="AK">Alaska</option>
+          </select>
+       </div><!--demo-content-->
+       <div class="demo-content">
+        <h3>Multi search selection</h3>
+        <div class="width-m">
+         <select multiple="" name="skills" class="ui fluid normal dropdown">
+            <option value="">Skills</option>
+            <option value="angular">Angular</option>
+            <option value="css">CSS</option>
+            <option value="design">Graphic Design</option>
+         </select>
+        </div><!--widthm-->
+       </div><!--demo-content-->
+   </div><!-- row -->
+  
+   <div class="row">
+   <h3>breadcrumb</h3>
+   <div class="ui breadcrumb">
+      <a class="section">Home</a>
+      <i class="right angle icon divider"></i>
+      <a class="section">Reports</a>
+      <i class="right angle icon divider"></i>
+      <div class="active section">Analytics</div>
+    </div><!--ui-->
+   </div><!--row-->
+   
+   <div class="row">
+    <h3>Pagination</h3>
+    <div class="demo-content">
+    <div class="pagi-line">
+            <span class="pageinfo">
+            showing
+                  <strong>21-41</strong>
+                  of
+                  <strong>722</strong>
+                  records| show
+                  <select>
+                  <option value="0" selected="selected" label="10">10</option>
+                  <option value="1" label="10">20</option>
+                  <option value="2" label="50">10</option>
+                  </select>
+                  entires
+            </span>
+            <div class="ui pagination menu">
+                <div ng-controller="PaginationDemoCtrl" >
+                    <pagination total-items="bigTotalItems" ng-model="bigCurrentPage" max-size="maxSize" class="pagination-sm" boundary-links="true">
+                        <nav>
+                        <!--pagination need to be fixed with AngularJs-->
+                          <ul class="pagination">
+                            <li><a href="#" aria-label="Previous">
+                                <span aria-hidden="true">Previous</span>
+                                </a>
+                            </li>
+                            <li class="active"><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li>
+                              <a href="#" aria-label="Next">
+                                <span aria-hidden="true">Next</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </nav>
+                    </pagination>
+                </div><!--PagiDemoCtrl-->
+            </div><!--ui pagi-->
+    </div><!--pagi-line-->
+    </div><!--demo-content-->
+   </div><!--row-->
+
+   <div class="row">
+      <h3>Messages</h3>
+      <div class="demo-content">
+          <div class="ui ignored warning message col-sm">
+            <b>Message title</b>
+            <p>Message content here, sometime one show content.<p>
+          </div>
+          <div class="ui ignored navy message col-sm">
+            <b>Message title</b>
+            <p>Message content here, sometime one show content.<p>
+          </div>
+          <div class="ui ignored red message col-sm">
+            <b>Message title</b>
+            <p>Message content here, sometime one show content.<p>
+          </div>
+      </div><!--demo-content-->
+   </div><!--row-->
+</div><!--container -->
+
+<!--script for datepicker-->
+<script src="js/customize.js"></script>
+<!--script end-->
+</body>
+</html>

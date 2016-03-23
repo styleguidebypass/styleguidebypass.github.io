@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <title>Bypass Live style guide</title>
+    <meta name="description" content="Flat UI Kit Free is a Twitter Bootstrap Framework design and Theme, this responsive framework includes a PSD and HTML version."/>
+
+    <meta name="viewport" content="width=1000, initial-scale=1.0, maximum-scale=1.0">
+
+    <!-- Loading Bootstrap
+    <link href="dist/css/vendor/bootstrap.min.css" rel="stylesheet"> -->
+    
+    <!-- Loading Flat UI -->
+    <!--<link href="dist/css/flat-ui.css" rel="stylesheet">
+    <link href="fonts/icomoon/style.css" rel="stylesheet">
+    <link href="docs/assets/css/demo.css" rel="stylesheet">
+    <link href="dist/css/bootstrap-theme.css">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="dist/css/semantic.css">  -->
+    
+    <link rel="stylesheet" type="text/css" href="semantic/out/semantic.css">
+    <!--<script src="semantic/out/semantic.min.js"></script>-->
+    
+    <!--<link href="dist/css/select2.min.css">-->
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="dist/js/vendor/html5shiv.js"></script>
+      <script src="dist/js/vendor/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  
+    <div class="container">
+      <div class="demo-headline">
+        <h1 class="demo-logo">
+          <div class="logo"></div>
+          <h2>LIVE UI KIT </h2>
+          <small>LIVE STYLE GUIDE FOR ADMIN</small>
+        </h1>
+      </div> <!-- /demo-headline -->
+
+      <h1 class="demo-section-title">Basic elements</h1>
+      <h3 class="demo-panel-title">Buttons</h3>
+
+      <div class="row demo-row">
+        <div class="col-xs-2 btn-block-margin">
+          <a href="#fakelink" class="btn btn-block btn-lg btn-primary">Primary Button</a>
+            <button class="ui primary button">
+              Save
+            </button>
+            <button class="ui button">
+              Discard
+            </button>
+        </div>
+        
+        <div class="col-xs-2 btn-block-margin">
+          <a href="#" class="btn btn-block btn-lg btn-success">
+          <span class="btn-icon">
+		  <svg width="11px" height="10px" viewBox="0 0 11 10" version="1.1">
+			  <defs></defs>
+			  <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+			  <g id="Path-5-+-Path-6-Copy-2" sketch:type="MSLayerGroup" transform="translate(0.032633, 0.002441)" stroke="#FFFFFF" stroke-width="2">
+			  <path d="M0,5 L10,5" id="Path-5" sketch:type="MSShapeGroup"></path>
+			  <path d="M5,10 L5,0" id="Path-6" sketch:type="MSShapeGroup"></path>
+			  </g>
+			  </g>
+          </svg>
+          </span>
+          <span class="btn-text">Create New</span>
+          </a>
+        </div>
+        
+        <button class="ui primary button">
+          Save
+        </button>
+        <div class="col-xs-2 btn-block-margin">
+          <a href="#fakelink" class="btn btn-block btn-lg btn-danger">Danger Button</a>
+        </div>
+      </div> <!-- /row -->
+
+      <div class="row demo-row">
+        <div class="col-xs-2 btn-block-margin">
+          <a href="#fakelink" class="btn btn-block btn-lg btn-default disabled">Disabled Button</a>
+        </div>
+        <div class="col-xs-2 btn-block-margin">
+          <a href="#fakelink" class="btn btn-lg btn-icon-block btn-icon-check"><span class="fui-check"></span></a>
+          <a href="#fakelink" class="btn btn-lg btn-icon-block btn-icon-cross"><span class="fui-cross"></span></a>
+        </div>
+        <div class="col-xs-2 btn-block-margin">
+           <a href="#fakelink" class="btn btn-block btn-lg btn-text">Text Button</a>
+        </div>
+        <div class="col-xs-2 btn-block-margin">
+          <a href="#fakelink" class="btn btn-block btn-lg btn-filter"><span class="btn-icon icon-filter"></span>filter Button</a>
+        </div>
+      </div> <!-- /row -->
+
+      <h3 class="demo-panel-title">Input</h3>
+      <div class="row">
+        <div class="col-xs-3 btn-block-margin">
+          <div class="form-group">
+            <input type="text" value="" placeholder="Search" class="form-control" />
+          </div>
+        </div>
+        <div class="col-xs-3 btn-block-margin">
+          <div class="form-group has-error">
+            <input type="text" value="Error" class="form-control" />
+          </div>
+        </div>
+        <div class="col-xs-3 btn-block-margin">
+          <div class="form-group input-search">
+            <input class="input-search-field form-control" type="search" value="" placeholder="Search" />
+          </div>
+        </div>
+        <div class="col-xs-3 btn-block-margin">
+          <div class="form-group">
+            <input type="text" value="Disabled" disabled="disabled" class="form-control" />
+          </div>
+        </div>
+      </div> <!-- /row -->
+
+      <div class="row">
+        <div class="col-xs-3">
+          <h3 class="demo-panel-title">Dropdown</h3>
+
+          <div class="btn-group">
+           <button data-toggle="dropdown" class="btn btn-primary dropdown-toggle btn-group>.btn:first-child" type="button">BULK ACTION <span class="caret-btn"></span></button>
+            <ul role="menu" class="dropdown-menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+            </ul>
+          </div><!-- /btn-group -->
+        </div> <!-- /.col-xs-3 -->
+        
+        
+        
+        <div class="col-xs-3">
+          <h3 class="demo-panel-title">Select</h3>
+          <select class="select select-primary select-block select-default">
+            <option value="0">Choose hero</option>
+            <option value="1">Spider Man</option>
+            <option value="2">Wolverine</option>
+            <option value="3">Captain America</option>
+            <option value="4" selected>X-Men</option>
+            <option value="5">Crocodile</option>
+          </select>
+        </div> <!-- /.col-xs-3 -->
+        
+        <div class="col-xs-3">
+         <h3 class="demo-panel-title">Filter Dropdown</h3>
+          <select class="select select-primary select-block select-search">
+            <option value="0">Location 1</option>
+            <option value="1">Location 2</option>
+            <option value="2">Location 3</option>
+            <option value="2">Location 4</option>
+            <option value="2">Location 7</option>
+            <option value="2">Location 8</option>
+            <option value="2">Location 9</option>
+            <option value="2">Location 10</option>
+            <option value="2">other Location 1</option>
+            <option value="2">other Location 2</option>
+            
+            <option value="4" selected>Selected Location</option>
+          </select>
+        </div> <!-- /.col-xs-3 -->
+        
+     
+     <div class="col-xs-5">
+     <h3 class="demo-panel-title">Multiple select</h3>
+      <select multiple="multiple" class="form-control multiselect multiselect-info">
+        <option value="0">storage1</option>
+        <option value="1" selected>storage2</option>
+        <option value="2" selected>storage3</option>
+        <option value="3">storage4 </option>
+        <option value="4">AAAstorage5</option>
+        <option value="5">BBBstorage6</option>
+        <option value="6">CCCstorage7 </option>
+       </select>
+      </div><!-- col-xs-5 -->
+      </div><!-- row -->
+
+
+     <div class="row demo-row">
+      <div class="col-xs-6">
+          <h3 class="demo-panel-title">Tags input</h3>
+          <div class="tagsinput-primary">
+            <input name="tagsinput" class="tagsinput" data-role="tagsinput" value="School, Teacher, Colleague" />
+          </div>
+       
+      </div><!--col-xs-6-->
+      </div><!--row-->
+     
+     
+      <div class="row demo-row">
+      <div class="col-xs-6">
+       <h3 class="demo-panel-title">Navbar (Portlets)</h3>
+       </div>
+      </div> <!-- /row -->
+      
+      
+      <!--navbar with tab -->
+      <div class="row">
+        <div class="col-xs-12">
+          <nav class="navbar navbar-inverse navbar-sec" role="navigation">
+              <h6 class="navbar-title">Title</h6>
+          </nav><!-- /navbar -->
+        </div>
+      </div> <!-- /row -->
+      
+
+      <div class="row">
+        <div class="col-xs-12">
+              <h3 class="demo-panel-title">Pagination</h3>
+              <p style="padding-bottom:20px;">please check pagination sample here: <a>https://angular-ui.github.io/bootstrap/</a></p>
+              <div class="page-select">
+                  <p><strong>21-41</strong> of <strong>722 </strong>total results | show</p>
+                  <select class="page-select-dropdown">
+                  <option value="0">20</option>
+                  <option value="1">50</option>
+                  </select>
+                  <p>records per page</p>
+              
+              <div class="pagi-row">
+               <ul class="pagination">
+                <li>
+                  <a href="#" aria-label="Previous">
+                    <span aria-hidden="true">first</span>
+                  </a>
+    		    </li>
+                <li>
+                  <a href="#" aria-label="Previous">
+                    <span aria-hidden="true">prev</span>
+                  </a>
+    		    </li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+   			    <li>
+                  <a href="#" aria-label="Next">
+                    <span aria-hidden="true">next</span>
+                  </a>
+   			    </li>
+                  <li>
+                  <a href="#" aria-label="Previous">
+                    <span aria-hidden="true">last</span>
+                  </a>
+    		  </li>
+              </ul>
+            </div><!--pagi-row-->
+           </div><!--page-select-->
+         </div><!--col-xs-12-->
+        </div><!--row-->
+      <!-- /navigation -->
+    <!-- /row -->
+
+      <div class="row">
+        <div class="col-xs-3">
+          <h3 class="demo-panel-title">Checkboxes</h3>
+            <div class="checkbox">
+    		  <input type="checkbox" checked="checked">
+              Checked
+ 			</div>
+             <div class="checkbox">
+    		  <input type="checkbox">
+              Unchecked
+ 			</div>
+        </div> <!-- /checkboxes col-xs-3 -->
+
+        <div class="col-xs-3">
+          <h3 class="demo-panel-title">Radio Buttons</h3>
+          <label class="radio">
+            <input type="radio" name="frequency" checked="checked">
+            Radio is on
+          </label>
+          <label class="radio">
+             <input type="radio" name="frequency">
+            Radio is off
+          </label> 
+
+        </div> <!-- /radios col-xs-3 -->
+
+        <div class="col-xs-3">
+          <h3 class="demo-panel-title">Switches</h3>
+             <div class="ui toggle checkbox">
+                  <input type="checkbox" name="public" tabindex="0" class="hidden">
+                  <label>Subscribe to weekly newsletter</label>
+            </div>
+        </div> <!-- /.col-xs-3 -->
+        
+      <div class="row alerts-row">
+        <div class="col-xs-6">
+        <div class="demo-title">
+      		<h3 class="demo-panel-title">Alerts</h3>
+      	</div>
+        <div class="demo-content">
+          <div class="alert alert-success">
+            <strong>Success!</strong>
+            " The page has been added."
+          </div>
+          <div class="alert alert-warning">
+            <strong>Warning!</strong>
+            " The page has been added."
+          </div>
+          <div class="alert alert-danger">
+            <strong>Failed!</strong>
+            " The page has not been added."
+          </div>
+        </div>
+       </div>
+      </div>
+      
+      
+      
+      <div class="row notes-row">
+        <div class="col-xs-12">
+        
+        <div class="demo-title">
+      		<h3 class="demo-panel-title">Notes</h3>
+      	</div>
+        
+        <div class="demo-content">
+          <div class="note note-success">
+            <h6 class="block">Success! Some Header Goes Here</h6>
+            <p>Duis mollis, est non commodo luctus, nisi erat mattis consectetur purus sit amet porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.</p>
+          </div>
+          
+           <div class="note note-info">
+            <h6 class="block">Audit</h6>
+            <p>Select a stock item to view that stock item's properties.</p>
+          </div>
+          
+          
+        </div>
+        
+       </div>
+      </div>
+      
+      
+      
+       <div class="row tabs-row">
+        <div class="col-xs-3">
+          <div class="demo-title">
+      		<h3 class="demo-panel-title">Tabs</h3>
+      	  </div>
+          <div class="demo-content">
+              <ul class="nav nav-tabs">
+                <li role="presentation" class="active"><a href="#">Tab 1</a></li>
+                <li role="presentation"><a href="#">Tab 2</a></li>
+                <li role="presentation"><a href="#">Tab 3</a></li>
+              </ul>
+         </div>
+       </div>
+      </div>
+      
+      
+      <div class="row labels-row">
+        <div class="demo-title">
+      	  <h3 class="demo-panel-title">Labels (Status)</h3>
+        </div> 
+           
+        <div class="col-xs-2">
+          <span class="label label-default">Default</span>
+          <span class="label label-primary">Primary</span>
+          <span class="label label-success">Success</span>
+          <span class="label label-info">Info</span>
+          <span class="label label-warning">Warning</span>
+          <span class="label label-danger">Danger</span>
+       </div>
+       
+       <div class="col-xs-1">   
+          <span class="label label-success">100%</span>
+          <span class="label label-warning">49%</span>
+          <span class="label label-danger">1％</span>   
+       </div>
+       
+       <div class="col-xs-1">
+         <h8 class="label-text-green">CLOSED</h8>
+         <h8 class="label-text-yellow">OPEN</h8>
+         <h8 class="label-text-red">DRAFT</h8>
+       </div> 
+      </div>
+      
+ 
+      
+
+      <div class="row demo-row typography-row">
+      	<div class="demo-title">
+      		<h3 class="demo-panel-title">Typography</h3>
+      	</div>
+      	<div class="demo-content">
+      		<div class="demo-type-example">
+	      		<h1><span class="demo-heading-note">Header 1</span>Showers across the W</h1>
+      		</div>
+      		<div class="demo-type-example">
+	      		<h2><span class="demo-heading-note">Header 2</span>Give this quartet a few</h2>
+      		</div>
+      		<div class="demo-type-example">
+	      		<h3><span class="demo-heading-note">Header 3</span>The Vatican transitions to a</h3>
+      		</div>
+      		<div class="demo-type-example">
+	      		<h4><span class="demo-heading-note">Header 4</span>Great American Bites: Telluride's Oak, The</h4>
+      		</div>
+      		<div class="demo-type-example">
+	      		<h5><span class="demo-heading-note">Header 5</span>Author Diane Alberts loves her some good</h5>
+      		</div>
+      		<div class="demo-type-example">
+	      		<h6><span class="demo-heading-note">Header 6</span>With the success of young-adult book-to-movie</h6>
+      		</div>
+      		<div class="demo-type-example">
+	      		<span class="demo-text-note">Paragraph</span>
+	          <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. <strong>Donec ullamcorper</strong> nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+      		</div>
+      		<div class="demo-type-example">
+	      		<span class="demo-text-note">Lead Text</span>
+						<p class="lead">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+      		</div>
+      		<div class="demo-type-example">
+	      		<span class="demo-text-note">Quote</span>
+	          <blockquote>
+	            <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus.</p>
+	            <small>Steve Jobs, CEO Apple</small>
+	          </blockquote>
+      		</div>
+      		<div class="demo-type-example">
+	      		<span class="demo-text-note">Small Font</span>
+	          <p><small>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</small></p>
+      		</div>
+      	</div><!-- /.demo-content-wide -->
+      </div><!-- /.demo-row -->
+      
+      <div class="row demo-row">
+      <h3 class="demo-panel-title">Color Swatches</h3>
+      <div class="row demo-swatches-row">
+	      <div class="swatches-col">
+		      <div class="pallete-item">      
+                 <dl class="palette palette-red">
+                <dt>#E14E4E</dt>
+                <dd>RED 100</dd>
+               </dl>
+               <dl class="palette palette-red2">
+                <dt>#BB2413</dt>
+                <dd>RED 200</dd>
+               </dl>
+               
+		      </div>
+              
+		      <div class="pallete-item">
+			   <dl class="palette palette-green">
+                <dt>#3498db</dt>
+                <dd>GREEN 100</dd>
+               </dl>
+              
+               <dl class="palette palette-green2">
+                <dt>#1D943B</dt>
+                <dd>GREEN 200</dd>
+               </dl>
+		      </div>
+             
+             
+		      <div class="pallete-item">
+              
+			  <dl class="palette palette-navy3">
+               <dt>#1472B0</dt>
+               <dd>NAVY 300</dd>
+              </dl>
+              <dl class="palette palette-navy4">
+               <dt>#0D638F</dt>
+               <dd>NAVY 400</dd>
+              </dl>
+		     </div>
+		      <div class="pallete-item">
+            
+              <dl class="palette palette-blue">
+                <dt>#4D90FE</dt>
+                <dd>Blue 100</dd>
+              </dl>
+              
+              <dl class="palette palette-blue2">
+                <dt>#2980FF</dt>
+                <dd>Blue 200</dd>
+              </dl>
+              
+		      </div>
+		      <div class="pallete-item">
+               <dl class="palette palette-cancel">
+              <dt>#8B9097</dt>
+              <dd>GREY CANCEL</dd>
+            </dl>
+            <dl class="palette palette-grey7">
+              <dt>#666C75</dt>
+              <dd>CANCEL ACTIVE</dd>
+            </dl>
+		      </div>
+		      <div class="pallete-item">
+			    <dl class="palette palette-orange">
+                  <dt>#D15400</dt>
+                  <dd>ORANGE</dd>
+                </dl>
+		     </div>
+		     <div class="pallete-item">
+		      <dl class="palette palette-lightyellow">
+               <dt>#FCF8E3</dt>
+               <dd>LIGHT YELLOW</dd>
+              </dl>
+              <dl class="palette palette-yellow">
+               <dt>#FBB21C</dt>
+               <dd>YELLOW</dd>
+              </dl>
+		   </div>
+		   <div class="pallete-item">
+			  <dl class="palette palette-navy">
+              <dt>#8DC038F</dt>
+              <dd>NAVY 100</dd>
+            </dl>
+            <dl class="palette palette-navy2">
+              <dt>#3A87AD</dt>
+              <dd>NAVY 200</dd>
+            </dl>
+            <dl class="palette palette-navy3">
+              <dt>#1472B0</dt>
+              <dd>NAVY 300</dd>
+            </dl>
+            <dl class="palette palette-navy4">
+              <dt>#0D638F</dt>
+              <dd>NAVY 400</dd>
+            </dl>
+             <dl class="palette palette-navy5">
+              <dt>#142C4B</dt>
+              <dd>NAVY 500</dd>
+            </dl>
+            
+		      </div>
+		      <div class="pallete-item">
+			  <dl class="palette palette-grey1">
+              <dt>#f9f9f9</dt>
+              <dd>GREY 100</dd>
+            </dl>
+            <dl class="palette palette-grey2">
+              <dt>#F5F5F5</dt>
+              <dd>GREY 200</dd>
+            </dl>
+             <dl class="palette palette-grey3">
+              <dt>#EEEEEE</dt>
+              <dd>GREY 300</dd>
+            </dl>
+             <dl class="palette palette-grey4">
+              <dt>#DDDDDD</dt>
+              <dd>GREY 400</dd>
+            </dl>
+             <dl class="palette palette-cancel">
+              <dt>#CCCCCC</dt>
+              <dd>GREY BORDER</dd>
+            </dl>
+              <dl class="palette palette-grey5">
+              <dt>#C9C9C9</dt>
+              <dd>GREY 500</dd>
+            </dl>
+		     </div>
+		     <div class="pallete-item">
+			  <dl class="palette palette-grey6">
+              <dt>#999999</dt>
+              <dd>GREY 600</dd>
+            </dl>
+            <dl class="palette palette-grey7">
+              <dt>#888888</dt>
+              <dd>GREY 700</dd>
+            </dl>
+             <dl class="palette palette-grey8">
+              <dt>#6F6F6</dt>
+              <dd>GREY 800</dd>
+            </dl>
+             <dl class="palette palette-grey9">
+              <dt>#555555</dt>
+              <dd>GREY 900</dd>
+            </dl>
+             <dl class="palette palette-grey10">
+              <dt>#333333</dt>
+              <dd>GREY 1000</dd>
+             </dl>
+		    </div>
+	      </div> <!-- /swatches items -->
+	      <div class="swatches-desc-col">
+		      <h6 class="palette-headline">SWATCHES</h6>
+          <p class="palette-paragraph">
+            Colors &mdash; is almost the most important part of the <strong>LIVE UI</strong>. Better to use different shades of provided colors than new.
+          </p>
+          <p class="palette-paragraph">
+            For your convenience we also provide <strong>Swatches Preset</strong> <span>(flat&#8209;ui&#8209;swatches.aco in the Pack folder).</span>
+          </p>
+          <p class="palette-paragraph">
+            <strong>No gradients, no shadows.</strong>
+          </p>
+	      </div> <!-- /swatches desc -->
+      </div> <!-- /swatches row -->
+</div>
+
+<div class="row demo-row">
+      <h3 class="demo-panel-title">Glyphs <small>(70)</small></h3>
+      <div class="demo-icons">
+        <div class="demo-content">
+          <span class="fui-info-circle"></span>
+          <span class="fui-alert-circle"></span>
+          <span class="fui-question-circle"></span>
+          <span class="fui-check-circle"></span>
+          <span class="fui-cross-circle"></span>
+          <span class="fui-plus-circle"></span>
+          <span class="fui-window"></span>
+          <span class="fui-windows"></span>
+          <span class="fui-upload"></span>
+          <span class="fui-arrow-right"></span>
+          <span class="fui-arrow-left"></span>
+          <span class="fui-loop"></span>
+          <span class="fui-cmd"></span>
+          <span class="fui-mic"></span>
+          <span class="fui-export"></span>
+          <span class="fui-heart"></span>
+          <span class="fui-location"></span>
+          <span class="fui-plus"></span>
+          <span class="fui-check"></span>
+          <span class="fui-cross"></span>
+          <span class="fui-list"></span>
+          <span class="fui-new"></span>
+          <span class="fui-video"></span>
+          <span class="fui-photo"></span>
+          <span class="fui-time"></span>
+          <span class="fui-eye"></span>
+          <span class="fui-chat"></span>
+          <span class="fui-home"></span>
+          <span class="fui-search"></span>
+          <span class="fui-user"></span>
+          <span class="fui-mail"></span>
+          <span class="fui-lock"></span>
+          <span class="fui-power"></span>
+          <span class="fui-star"></span>
+          <span class="fui-calendar"></span>
+          <span class="fui-gear"></span>
+          <span class="fui-bookmark"></span>
+          <span class="fui-exit"></span>
+          <span class="fui-trash"></span>
+          <span class="fui-folder"></span>
+          <span class="fui-bubble"></span>
+          <span class="fui-calendar-solid"></span>
+          <span class="fui-star-2"></span>
+          <span class="fui-credit-card"></span>
+          <span class="fui-clip"></span>
+          <span class="fui-link"></span>
+          <span class="fui-pause"></span>
+          <span class="fui-play"></span>
+          <span class="fui-volume"></span>
+          <span class="fui-mute"></span>
+          <span class="fui-resize"></span>
+          <span class="fui-tag"></span>
+          <span class="fui-document"></span>
+          <span class="fui-image"></span>
+          <span class="fui-triangle-up"></span>
+          <span class="fui-triangle-up-small"></span>
+          <span class="fui-triangle-right-large"></span>
+          <span class="fui-triangle-left-large"></span>
+          <span class="fui-triangle-down"></span>
+          <span class="fui-triangle-down-small"></span>
+          <span class="fui-radio-unchecked"></span>
+          <span class="fui-radio-checked"></span>
+          <span class="fui-checkbox-unchecked"></span>
+          <span class="fui-checkbox-checked"></span>
+          <span class="fui-list-thumbnailed"></span>
+          <span class="fui-list-small-thumbnails"></span>
+          <span class="fui-list-numbered"></span>
+          <span class="fui-list-large-thumbnails"></span>
+          <span class="fui-list-columned"></span>
+          <span class="fui-list-bulleted"></span>
+        </div><!-- /.demo-content -->
+      </div><!-- /.demo-icons -->
+</div>
+
+
+
+     
+<!--Table responsive-->
+      <div class="row demo-row">
+      <h3 class="demo-panel-title mbl pbl">Table with responsive columns (9)</h3>
+      
+      <div class="table-responsive">
+      
+       <!--navbar with tab -->
+      <div class="row">
+        <div class="col-xs-12">
+          <nav class="navbar navbar-inverse navbar-sec" role="navigation">
+              <h6 class="navbar-title">Title</h6>
+          </nav><!-- /navbar -->
+        </div>
+      </div> <!-- /row -->
+      
+    <div class="inside-table">
+     <div class="btn-sec">
+       <div class="btn-group">
+            <button data-toggle="dropdown" class="btn btn-primary dropdown-toggle btn-group>.btn:first-child" type="button">BULK ACTION <span class="caret-btn"></span></button>
+            <ul role="menu" class="dropdown-menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+            </ul>
+             
+             
+                    
+            <div class="btn-table-new">
+              <a href="#" class="btn btn-block btn-lg btn-success">
+              <span class="btn-icon">
+                <svg width="11px" height="10px" viewBox="0 0 11 10" version="1.1">
+                  <defs></defs>
+                  <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+                  <g id="Path-5-+-Path-6-Copy-2" sketch:type="MSLayerGroup" transform="translate(0.032633, 0.002441)" stroke="#FFFFFF" stroke-width="2">
+                  <path d="M0,5 L10,5" id="Path-5" sketch:type="MSShapeGroup"></path>
+                  <path d="M5,10 L5,0" id="Path-6" sketch:type="MSShapeGroup"></path>
+                  </g>
+                  </g>
+              </svg>
+              </span>
+             <span class="btn-text">Create New</span>
+              </a>
+          </div>
+  <div class="btn-table-primary">
+          <a href="#" class="btn btn-block btn-lg btn-primary">
+          <span class="btn-icon">
+			<svg width="11px" height="13px" viewBox="0 0 11 13" version="1.1">
+                <defs></defs>
+                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+                    <g id="file-upload-copy-2" sketch:type="MSLayerGroup" transform="translate(0.129522, 0.437861)" fill="#FFFFFF">
+                        <path d="M2.85714286,9.28571429 L7.14285714,9.28571429 L7.14285714,5 L10,5 L5,0 L0,5 L2.85714286,5 L2.85714286,9.28571429 Z" id="Shape" sketch:type="MSShapeGroup"></path>
+                        <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="0" y="10.7142857" width="10" height="1.42857143"></rect>
+                    </g>
+                </g>
+            </svg>
+          </span>
+          Export
+          </a>
+        </div>
+        
+        <div class="btn-table-primary">
+          <a href="#" class="btn btn-block btn-lg btn-primary">
+          <span class="btn-icon">
+			<svg width="10px" height="13px" viewBox="0 0 10 13">
+				<defs></defs>
+				<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+					<g id="file-upload-copy-2" sketch:type="MSLayerGroup" fill="#FFFFFF">
+						<path d="M2.85714286,9.28571429 L7.14285714,9.28571429 L7.14285714,5 L10,5 L5,0 L0,5 L2.85714286,5 L2.85714286,9.28571429 Z" id="Shape" sketch:type="MSShapeGroup" transform="translate(5.000000, 4.642857) scale(1, -1) translate(-5.000000, -4.642857) "></path>
+						<rect id="Rectangle-path" sketch:type="MSShapeGroup" x="0" y="10.7142857" width="10" height="1.42857143"></rect>
+					</g>
+				</g>
+			</svg>
+          </span>
+          Import
+          </a>
+        </div><!--btn-table-primary-->
+        </div>
+         
+       </div><!-- /btn-group -->
+       </div>
+   <table class="responsive">
+    <tbody>
+     <tr class="table-header">
+      <th>
+      <input type="checkbox">
+      Name</th>
+      <th>Location</th>
+      <th>ID</th>
+      <th>Category</th>
+      <th>Tax Category</th>
+      <th>Price</th>
+      <th>Actions</th>
+    </tr>
+    
+    <tr>
+      <th class="filter">
+            <div class="input-group">
+             <input type="text" class="form-control" placeholder="Name" aria-describedby="basic-addon1">
+            </div>
+      </th>
+      <th class="filter">
+            <div class="input-group">
+             <input type="text" class="form-control" placeholder="Location" aria-describedby="basic-addon1">
+            </div>
+      </th>
+      <th class="filter">
+            <div class="input-group">
+             <input type="text" class="form-control" placeholder="ID" aria-describedby="basic-addon1">
+            </div>
+      </th>
+      <th class="filter">
+            <div class="input-group">
+             <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon1">
+            </div>
+      </th>
+      <th></th>
+      <th></th>
+      <th><a href="#">Clear filter</a></th>
+      
+    </tr>  
+      
+    <tr>
+     
+      <td class="co-large"><input type="checkbox">Long line ending by "..." after 2 lines</td>
+      <td class="co-medium3">Long Location name called 0043...</td>
+      <td>000cb40d</td>
+      <td>Food</td>
+      <td>Food</td>
+      <td>$10.0</td>
+      <td><a>Edit | Delete</a></td>
+    </tr>
+    <tr>
+      <td><input type="checkbox">And we need to keep name column</td>
+      <td>not across checkboxes columns</td>
+      <td>0005218e</td>
+      <td>Food</td>
+      <td>Food</td>
+      <td>$10.0</td>
+      <td><a>Edit | Delete</a></td>
+    </tr>
+    <tr>
+      <td><input type="checkbox">Dragon Armor</td>
+      <td>Location 000000000000003</td>
+      <td>00052190</td>
+      <td>Food</td>
+      <td>Food</td>
+      <td>$10.0</td>
+      <td class="co-action"><a>Edit | Delete</a></td>
+    </tr>
+    </tbody>
+   </table>
+   </div><!--inside-table-->
+  </div>
+</div><!--row-->
+<!--Table responsive end-->
+
+<!--Table responsive-->
+      <div class="row demo-row">
+      <h3 class="demo-panel-title mbl pbl">Table with responsive columns (9)</h3>
+      
+      <div class="table-responsive">
+      
+       <!--navbar with tab -->
+      <div class="row">
+        <div class="col-xs-12">
+          <nav class="navbar navbar-inverse navbar-sec" role="navigation">
+              <h6 class="navbar-title">Title</h6>
+          </nav><!-- /navbar -->
+        </div>
+      </div> <!-- /row -->
+      
+    <div class="inside-table">
+     <div class="btn-sec">
+       <div class="btn-group">
+            <button data-toggle="dropdown" class="btn btn-primary dropdown-toggle btn-group>.btn:first-child" type="button">BULK ACTION <span class="caret-btn"></span></button>
+            <ul role="menu" class="dropdown-menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+            </ul>
+             
+              
+          <div class="dropdown">
+              <button class="co-large btn btn-dropdown dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                All
+                <span class="caret-dropdown"></span>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+          </div><!--dropdown end-->
+             
+                    
+            <div class="btn-table-new">
+              <a href="#" class="btn btn-block btn-lg btn-success">
+              <span class="btn-icon">
+                <svg width="11px" height="10px" viewBox="0 0 11 10" version="1.1">
+                  <defs></defs>
+                  <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+                  <g id="Path-5-+-Path-6-Copy-2" sketch:type="MSLayerGroup" transform="translate(0.032633, 0.002441)" stroke="#FFFFFF" stroke-width="2">
+                  <path d="M0,5 L10,5" id="Path-5" sketch:type="MSShapeGroup"></path>
+                  <path d="M5,10 L5,0" id="Path-6" sketch:type="MSShapeGroup"></path>
+                  </g>
+                  </g>
+              </svg>
+              </span>
+             <span class="btn-text">Create New</span>
+              </a>
+          </div>
+
+     <div class="btn-table-primary btn-large">
+          <a href="#" class="btn btn-block btn-lg btn-primary">
+          <span class="btn-icon">
+			<svg width="11px" height="13px" viewBox="0 0 11 13" version="1.1">
+                <defs></defs>
+                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+                    <g id="file-upload-copy-2" sketch:type="MSLayerGroup" transform="translate(0.129522, 0.437861)" fill="#FFFFFF">
+                        <path d="M2.85714286,9.28571429 L7.14285714,9.28571429 L7.14285714,5 L10,5 L5,0 L0,5 L2.85714286,5 L2.85714286,9.28571429 Z" id="Shape" sketch:type="MSShapeGroup"></path>
+                        <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="0" y="10.7142857" width="10" height="1.42857143"></rect>
+                    </g>
+                </g>
+            </svg>
+          </span>
+          Add All Stock Item to Location
+          </a>
+        </div>
+
+        </div>
+         
+       </div><!-- /btn-group -->
+       </div>
+   <table class="responsive">
+    <tbody>
+     <tr class="table-header">
+      <th>
+      <input type="checkbox">
+      Name</th>
+      <th>Location</th>
+      <th>ID</th>
+      <th>Category</th>
+      <th>Tax Category</th>
+      <th>Price</th>
+      <th>Actions</th>
+    </tr>
+    
+    <tr>
+      <th class="filter">
+            <div class="input-group">
+             <input type="text" class="form-control" placeholder="Name" aria-describedby="basic-addon1">
+            </div>
+      </th>
+      <th class="filter">
+            <div class="input-group">
+             <input type="text" class="form-control" placeholder="Location" aria-describedby="basic-addon1">
+            </div>
+      </th>
+      <th class="filter">
+            <div class="input-group">
+             <input type="text" class="form-control" placeholder="ID" aria-describedby="basic-addon1">
+            </div>
+      </th>
+      <th class="filter">
+            <div class="input-group">
+             <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon1">
+            </div>
+      </th>
+      <th></th>
+      <th></th>
+      <th><a href="#">Clear filter</a></th>
+      
+    </tr>  
+      
+    <tr>
+     
+      <td class="co-large"><input type="checkbox">Long line ending by "..." after 2 lines</td>
+      <td class="co-medium3">Long Location name called 0043...</td>
+      <td>000cb40d</td>
+      <td>Food</td>
+      <td>Food</td>
+      <td>$10.0</td>
+      <td><a>Edit | Delete</a></td>
+    </tr>
+    <tr>
+      <td><input type="checkbox">And we need to keep name column</td>
+      <td>not across checkboxes columns</td>
+      <td>0005218e</td>
+      <td>Food</td>
+      <td>Food</td>
+      <td>$10.0</td>
+      <td><a>Edit | Delete</a></td>
+    </tr>
+    <tr>
+      <td><input type="checkbox">Dragon Armor</td>
+      <td>Location 000000000000003</td>
+      <td>00052190</td>
+      <td>Food</td>
+      <td>Food</td>
+      <td>$10.0</td>
+      <td class="co-action"><a>Edit | Delete</a></td>
+    </tr>
+    </tbody>
+   </table>
+   </div><!--inside-table-->
+  </div>
+</div><!--row-->
+<!--Table responsive end-->
+
+
+
+
+
+</div>
+ <!-- /container -->
+
+    <!--<script src="dist/js/vendor/jquery.min.js"></script>
+    <script src="dist/js/ui-bootstrap-tpls-0.13.0.min.js"></script>
+    <script src="dist/js/flat-ui.min.js"></script>
+    <script src="docs/assets/js/application.js"></script>-->
+    
+    <!--responsive table js-->
+   <!-- <script src="dist/js/responsive-tables.js"></script>-->
+    
+    <!--semantic-ui-->
+    <!--<script src="dist/js/semantic.min.js"></script>-->
+    
+
+  </body>
+</html>

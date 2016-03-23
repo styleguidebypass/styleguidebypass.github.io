@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <title>Bypass Live style guide</title>
+    <meta name="description" content="Flat UI Kit Free is a Twitter Bootstrap Framework design and Theme, this responsive framework includes a PSD and HTML version."/>
+    <meta name="viewport" content="width=1000, initial-scale=1.0, maximum-scale=1.0">
+
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/angular.min.js"></script>
+    <script src="semantic/dist/js/semantic.js"></script>
+    <script src="js/jquery-ui.js"></script>
+
+    <link rel="shortcut icon" type="image/ico" href="favicon32.png">
+    <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.css">
+    <link rel="stylesheet" type="text/css" href="demo_layout.css">
+    <link rel="stylesheet" type="text/css" href="customized.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="js/example.js"></script>
+    <script src="https://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.13.4.js"></script>
+  </head>
+  <body>
+<div class="container">
+      <div class="demo-headline">
+          <h2>LIVE UI KIT </h2>
+          <small>LIVE STYLE GUIDE FOR ADMIN</small>  
+          <div class="ui tabular menu">
+              <a href="index.html" class="item">Basic elements</a>
+              <a href="setting.html" class="item">Global Setting</a>
+              <a href="tables.html" class="item">Tables</a>
+              <a href="#" class="active item">Forms</a>
+              <a href="modal.html" class="item">Modals</a>
+              <a href="pages.html" class="item">Pages</a>
+              <a href="examples.html" class="item">Ideal Examples</a>
+          </div>
+          <h1>Forms</h1>
+      </div> <!-- /demo-headline -->
+
+    <div class="row">
+    <h3>Form to create new (Table)</h3>
+      <div class="content">
+        <div class="form-inside form-margin-top">
+         <div class="split-form form-left">
+
+          <form class="ui form">
+            <h4>Item Properties</h4>
+            <div class="field">
+              <label>Name</label>
+              <input type="text" name="Item name" placeholder="Item name">
+            </div><!--field end-->
+            <div class="field">
+              <label>Name</label>
+              <input type="text" name="Item name" placeholder="Item name">
+            </div><!--field end-->
+           
+             <div class="field">
+              <label>Description</label>
+              <textarea rows="3"></textarea>
+            </div>
+             <div class="two fields">
+             <div class="field form-input-sm">
+              <label>Sku</label>
+              <input type="text" name="Item name" placeholder="Sku">
+            </div><!--field end-->
+            <div class="field form-input-lg">
+              <label>Weight</label>
+              <input type="text" name="Item name" placeholder="Weight">
+            </div><!--field end-->
+          </div><!--two fields end-->
+
+            <div class="field">
+              <div class="ui checkbox">
+                  <input type="checkbox" tabindex="0">
+                  <label>Alcohol</label>
+              </div>
+            </div>
+          </form><!--form end-->
+         </div><!--split form end-->
+
+         <div class="split-form form-right">
+          <form class="ui form">
+            <h4>Groups</h4>
+            <div class="field">
+              <label>Category</label>
+              <div class="ui fluid search selection dropdown">
+                 <input type="hidden" name="category">
+                 <i class="dropdown icon"></i>
+                 <div class="default text">Select Category</div>
+                 <div class="menu">
+                  <div class="item" data-value="1">Report 1</div>
+                </div><!--menu-->
+              </div><!--ui-->
+            </div><!--field-->
+               <div class="field">
+              <label>Catalog</label>
+              <div class="ui fluid search selection dropdown">
+                 <input type="hidden" name="category">
+                 <i class="dropdown icon"></i>
+                 <div class="default text">Select Catalog</div>
+                 <div class="menu">
+                  <div class="item" data-value="1">Report 1</div>
+                </div><!--menu-->
+              </div><!--ui-->
+            </div><!--field-->
+               <div class="field">
+              <label>Tax Group</label>
+              <div class="ui fluid search selection dropdown">
+                 <input type="hidden" name="category">
+                 <i class="dropdown icon"></i>
+                 <div class="default text">Select Tax Group</div>
+                 <div class="menu">
+                  <div class="item" data-value="1">Report 1</div>
+                </div><!--menu-->
+              </div><!--ui-->
+            </div><!--field-->
+               <div class="field">
+              <label>Report Group</label>
+              <div class="ui fluid search selection dropdown">
+                 <input type="hidden" name="category">
+                 <i class="dropdown icon"></i>
+                 <div class="default text">Select Reporting Group</div>
+                 <div class="menu">
+                  <div class="item" data-value="1">Report 1</div>
+                </div><!--menu-->
+              </div><!--ui-->
+            </div><!--field-->
+               <div class="field">
+              <label>Topping Group</label>
+              <div class="ui fluid search selection dropdown">
+                 <input type="hidden" name="category">
+                 <i class="dropdown icon"></i>
+                 <div class="default text">Select Topping Group</div>
+                 <div class="menu">
+                  <div class="item" data-value="1">Report 1</div>
+                </div><!--menu-->
+              </div><!--ui-->
+            </div><!--field-->
+          </form><!--ui-->
+        </div><!--split form end-->
+      </div>
+
+        <div class="sec-btn-bottom">
+          <button class="ui green button btn-right">
+              Save
+          </button>
+          <button class="ui cancel button btn-right">
+              Cancel
+          </button>
+         </div>
+    </div><!--content end-->
+  </div><!--row ends-->
+
+  <div class="row">
+    <h3>Form to create new (Table with tabs)</h3>
+      <div class="content">
+        <div class="form-inside form-margin-top">
+          <div class="ui tabular menu">
+              <a href="#" class="active item">General</a>
+              <a href="#" class="item">Menus</a>
+              <a href="#" class="item">Addons</a>
+              <a href="#" class="item">Inventory</a>
+          </div>
+        
+         <div class="split-form form-left">
+
+          <form class="ui form">
+            <h4>Item Properties</h4>
+            <div class="field">
+              <label>Name</label>
+              <input type="text" name="Item name" placeholder="Item name">
+            </div><!--field end-->
+            <div class="field">
+              <label>Name</label>
+              <input type="text" name="Item name" placeholder="Item name">
+            </div><!--field end-->
+           
+             <div class="field">
+              <label>Description</label>
+              <textarea rows="3"></textarea>
+            </div>
+             <div class="two fields">
+             <div class="field form-input-sm">
+              <label>Sku</label>
+              <input type="text" name="Item name" placeholder="Sku">
+            </div><!--field end-->
+            <div class="field form-input-lg">
+              <label>Weight</label>
+              <input type="text" name="Item name" placeholder="Weight">
+            </div><!--field end-->
+          </div><!--two fields end-->
+
+            <div class="field">
+              <div class="ui checkbox">
+                  <input type="checkbox" tabindex="0">
+                  <label>Alcohol</label>
+              </div>
+            </div>
+          </form><!--form end-->
+         </div><!--split form end-->
+
+         <div class="split-form form-right">
+          <form class="ui form">
+            <h4>Groups</h4>
+            <div class="field">
+              <label>Category</label>
+              <div class="ui fluid search selection dropdown">
+                 <input type="hidden" name="category">
+                 <i class="dropdown icon"></i>
+                 <div class="default text">Select Category</div>
+                 <div class="menu">
+                  <div class="item" data-value="1">Report 1</div>
+                </div><!--menu-->
+              </div><!--ui-->
+            </div><!--field-->
+            <div class="field">
+              <label>Catalog</label>
+              <div class="ui fluid search selection dropdown">
+                 <input type="hidden" name="category">
+                 <i class="dropdown icon"></i>
+                 <div class="default text">Select Catalog</div>
+                 <div class="menu">
+                  <div class="item" data-value="1">Report 1</div>
+                </div><!--menu-->
+              </div><!--ui-->
+            </div><!--field-->
+               <div class="field">
+              <label>Tax Group</label>
+              <div class="ui fluid search selection dropdown">
+                 <input type="hidden" name="category">
+                 <i class="dropdown icon"></i>
+                 <div class="default text">Select Tax Group</div>
+                 <div class="menu">
+                  <div class="item" data-value="1">Report 1</div>
+                </div><!--menu-->
+              </div><!--ui-->
+            </div><!--field-->
+               <div class="field">
+              <label>Report Group</label>
+              <div class="ui fluid search selection dropdown">
+                 <input type="hidden" name="category">
+                 <i class="dropdown icon"></i>
+                 <div class="default text">Select Reporting Group</div>
+                 <div class="menu">
+                  <div class="item" data-value="1">Report 1</div>
+                </div><!--menu-->
+              </div><!--ui-->
+            </div><!--field-->
+               <div class="field">
+              <label>Topping Group</label>
+              <div class="ui fluid search selection dropdown">
+                 <input type="hidden" name="category">
+                 <i class="dropdown icon"></i>
+                 <div class="default text">Select Topping Group</div>
+                 <div class="menu">
+                  <div class="item" data-value="1">Report 1</div>
+                </div><!--menu-->
+              </div><!--ui-->
+            </div><!--field-->
+          </form><!--ui-->
+        </div><!--split form end-->
+      </div>
+
+        <div class="sec-btn-bottom">
+          <button class="ui green button btn-right">
+              Save
+          </button>
+          <button class="ui cancel button btn-right">
+              Cancel
+          </button>
+         </div>
+    </div><!--content end-->
+  </div><!--row ends-->
+
+   <div class="row">
+    <h3>Form to create new (Accordion)</h3>
+      <div class="content">
+        <!--Accordion starts-->
+        <div class="ui styled accordion form-margin-top">
+          <div class="active title">
+              <i class="dropdown icon"></i>
+              STEP 1 - Item
+          </div>
+        <div class="active content">
+
+        <div class="form-inside">
+         <div class="split-form form-left">
+          <form class="ui form">
+            <h4>Item Properties</h4>
+            <div class="field">
+              <label>Name</label>
+              <input type="text" name="Item name" placeholder="Item name">
+            </div><!--field end-->
+            <div class="field">
+              <label>Name</label>
+              <input type="text" name="Item name" placeholder="Item name">
+            </div><!--field end-->
+           
+             <div class="field">
+              <label>Description</label>
+              <textarea rows="3"></textarea>
+            </div>
+             <div class="two fields">
+             <div class="field form-input-sm">
+              <label>Sku</label>
+              <input type="text" name="Item name" placeholder="Sku">
+            </div><!--field end-->
+            <div class="field form-input-lg">
+              <label>Weight</label>
+              <input type="text" name="Item name" placeholder="Weight">
+            </div><!--field end-->
+          </div><!--two fields end-->
+
+            <div class="field">
+              <div class="ui checkbox">
+                  <input type="checkbox" tabindex="0">
+                  <label>Alcohol</label>
+              </div>
+            </div>
+          </form><!--form end-->
+         </div><!--split form end-->
+
+         <div class="split-form form-right">
+          <form class="ui form">
+            <h4>Groups</h4>
+            <div class="field">
+              <label>Category</label>
+              <div class="ui fluid search selection dropdown">
+                 <input type="hidden" name="category">
+                 <i class="dropdown icon"></i>
+                 <div class="default text">Select Category</div>
+                 <div class="menu">
+                  <div class="item" data-value="1">Report 1</div>
+                </div><!--menu-->
+              </div><!--ui-->
+            </div><!--field-->
+               <div class="field">
+              <label>Catalog</label>
+              <div class="ui fluid search selection dropdown">
+                 <input type="hidden" name="category">
+                 <i class="dropdown icon"></i>
+                 <div class="default text">Select Catalog</div>
+                 <div class="menu">
+                  <div class="item" data-value="1">Report 1</div>
+                </div><!--menu-->
+              </div><!--ui-->
+            </div><!--field-->
+               <div class="field">
+              <label>Tax Group</label>
+              <div class="ui fluid search selection dropdown">
+                 <input type="hidden" name="category">
+                 <i class="dropdown icon"></i>
+                 <div class="default text">Select Tax Group</div>
+                 <div class="menu">
+                  <div class="item" data-value="1">Report 1</div>
+                </div><!--menu-->
+              </div><!--ui-->
+            </div><!--field-->
+               <div class="field">
+              <label>Report Group</label>
+              <div class="ui fluid search selection dropdown">
+                 <input type="hidden" name="category">
+                 <i class="dropdown icon"></i>
+                 <div class="default text">Select Reporting Group</div>
+                 <div class="menu">
+                  <div class="item" data-value="1">Report 1</div>
+                </div><!--menu-->
+              </div><!--ui-->
+            </div><!--field-->
+               <div class="field">
+              <label>Topping Group</label>
+              <div class="ui fluid search selection dropdown">
+                 <input type="hidden" name="category">
+                 <i class="dropdown icon"></i>
+                 <div class="default text">Select Topping Group</div>
+                 <div class="menu">
+                  <div class="item" data-value="1">Report 1</div>
+                </div><!--menu-->
+              </div><!--ui-->
+            </div><!--field-->
+          </form><!--ui-->
+        </div><!--split form end-->
+      </div>
+     </div>
+    <div class="title">
+              <i class="dropdown icon"></i>
+              STEP 2 - Menus
+    </div>
+
+    <div class="content">
+              <form class="ui form">
+                  <div class="field">
+                  <label>Add item to menu</label>
+                  <div class="ui fluid simple search selection dropdown dropdown-sm">
+                     <input type="hidden" name="category">
+                     <i class="dropdown icon"></i>
+                     <div class="default text">Select Menu</div>
+                     <div class="menu">
+                      <div class="item" data-value="1">Menu 1</div>
+                    </div><!--menu-->
+                  </div><!--ui-->
+                </div><!--field-->
+              </form><!--ui form-->
+    </div><!--content end-->
+
+    <div class="title">
+              <i class="dropdown icon"></i>
+              STEP 3 - Addons
+    </div>
+
+    <div class="content">
+              <form class="ui form">
+                  <div class="field">
+                  <label>Select Item Addons</label>
+                  <div class="ui fluid simple search selection dropdown dropdown-sm">
+                     <input type="hidden" name="category">
+                     <i class="dropdown icon"></i>
+                     <div class="default text">Select Addon Group</div>
+                     <div class="menu">
+                      <div class="item" data-value="1">Addon group 1</div>
+                    </div><!--menu-->
+                  </div><!--ui-->
+                </div><!--field-->
+              </form><!--ui form-->
+    </div><!--content end-->
+
+  </div><!--Accordion end-->
+
+        <div class="sec-btn-bottom">
+          <button class="ui green button btn-right">
+              Save
+          </button>
+          <button class="ui cancel button btn-right">
+              Cancel
+          </button>
+        </div><!--btn sec-->
+    </div><!--content end-->
+  </div><!--row ends-->
+</div><!-- /container -->
+<script src="js/customize.js"></script>
+</body>
+</html>

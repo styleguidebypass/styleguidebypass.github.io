@@ -1,0 +1,1266 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <title>Bypass Live style guide</title>
+    <meta name="description" content="Flat UI Kit Free is a Twitter Bootstrap Framework design and Theme, this responsive framework includes a PSD and HTML version."/>
+    <meta name="viewport" content="width=1000, initial-scale=1.0, maximum-scale=1.0">
+
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/angular.min.js"></script>
+    <script src="semantic/dist/js/semantic.js"></script>
+    <script src="js/jquery-ui.js"></script>
+
+    <link rel="shortcut icon" type="image/ico" href="favicon32.png">
+    <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.css">
+    <link rel="stylesheet" type="text/css" href="demo_layout.css">
+    <link rel="stylesheet" type="text/css" href="customized.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="js/example.js"></script>
+    <script src="https://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.13.4.js"></script>
+  </head>
+  <body>
+<div class="container">
+      <div class="demo-headline">
+          <h2>LIVE UI KIT </h2>
+          <small>LIVE STYLE GUIDE FOR ADMIN</small>
+          <div class="ui tabular menu">
+              <a href="index.html" class="item">Basic elements</a>
+              <a href="setting.html" class="item">Global Setting</a>
+              <a href="#" class="active item">Tables</a>
+              <a href="form.html" class="item">Forms</a>
+              <a href="modal.html" class="item">Modals</a>
+              <a href="pages.html" class="item">Pages</a>
+              <a href="examples.html" class="item">Ideal Examples</a>
+           </div>
+          <h1>Collections</h1>
+      </div> <!-- /demo-headline -->
+
+      <div class="row">
+       <h3>Table with data</h3>
+         <div class="content">
+         <table class="ui striped table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Date Joined</th>
+              <th>E-mail</th>
+              <th>Called</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>John Lilki</td>
+              <td>September 14, 2013</td>
+              <td>jhlilk22@yahoo.com</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td>Jamie Harington</td>
+              <td>January 11, 2014</td>
+              <td>jamieharingonton@yahoo.com</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td>Jill Lewis</td>
+              <td>May 11, 2014</td>
+              <td>jilsewris22@yahoo.com</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td>John Lilki</td>
+              <td>September 14, 2013</td>
+              <td>jhlilk22@yahoo.com</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td>John Lilki</td>
+              <td>September 14, 2013</td>
+              <td>jhlilk22@yahoo.com</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td>Jamie Harington</td>
+              <td>January 11, 2014</td>
+              <td>jamieharingonton@yahoo.com</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td>Jill Lewis</td>
+              <td>May 11, 2014</td>
+              <td>jilsewris22@yahoo.com</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td>John Lilki</td>
+              <td>September 14, 2013</td>
+              <td>jhlilk22@yahoo.com</td>
+              <td>No</td>
+            </tr>
+          </tbody>
+        </table>
+        
+        <div class="pagi-line">
+            <span class="pageinfo">
+            showing
+                  <strong>21-41</strong>
+                  of
+                  <strong>722</strong>
+                  records| show
+                  <select>
+                  <option value="0" selected="selected" label="10">10</option>
+                  <option value="1" label="10">20</option>
+                  <option value="2" label="50">10</option>
+                  </select>
+                  entires
+            </span>
+            <div class="ui pagination menu">
+                <div ng-controller="PaginationDemoCtrl" >
+                    <pagination total-items="bigTotalItems" ng-model="bigCurrentPage" max-size="maxSize" class="pagination-sm" boundary-links="true">
+                    <nav>
+                    <!--pagination need to be fixed with AngularJs-->
+                      <ul class="pagination">
+                        <li>
+                          <a href="#" aria-label="Previous">
+                            <span aria-hidden="true">Previous</span>
+                          </a>
+                        </li>
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li>
+                          <a href="#" aria-label="Next">
+                            <span aria-hidden="true">Next</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
+                    </pagination>
+                </div>
+            </div><!--ui-->
+        </div><!--pagi-line-->
+        </div><!--content ends-->
+      </div><!--row ends-->
+      
+
+       <div class="row">
+       <h3>Table with multi-columns & label & actions</h3>
+         <div class="content">
+         <table class="ui striped table">
+           <thead>
+            <tr>
+              <th>ID</th>
+              <th>Status</th>
+              <th>Source</th>
+              <th>Destination</th>
+              <th>Date Sent</th>
+              <th>Date Received</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>100020</td>
+              <td>
+                <div class="ui green labels">
+                  <a class="ui label">
+                    CLOSED
+                  </a>
+                </div>
+              </td>
+              <td>Arkansas Travelers</td>
+              <td>Demo Booth</td>
+              <td>June 10, 2015</td>
+              <td>June 10, 2015</td>
+              <td class="btn-text-action"><button class="btn-text">Print</button>|<button class="btn-text">View</button>|<button class="btn-text">Duplicate</button>|<button class="btn-text">Undo</button></td>
+            </tr>
+            <tr>
+              <td>100020</td>
+              <td>
+                <div class="ui green labels">
+                  <a class="ui label">
+                    CLOSED
+                  </a>
+                </div>
+              </td>
+              <td>Arkansas Travelers</td>
+              <td>Demo Booth</td>
+              <td>June 10, 2015</td>
+              <td>June 10, 2015</td>
+              <td class="btn-text-action"><button class="btn-text">Print</button>|<button class="btn-text">View</button>|<button class="btn-text">Duplicate</button>|<button class="btn-text">Undo</button></td>
+            </tr>
+            <tr>
+              <td>100020</td>
+              <td>
+                <div class="ui red labels">
+                  <a class="ui label">
+                    ERROR
+                  </a>
+                </div>
+              </td>
+              <td>Arkansas Travelers</td>
+              <td>Demo Booth</td>
+              <td>June 10, 2015</td>
+              <td>June 10, 2015</td>
+              <td class="btn-text-action"><button class="btn-text">Print</button>|<button class="btn-text">View</button>|<button class="btn-text">Duplicate</button>|<button class="btn-text">Undo</button></td>
+            </tr>
+            <tr>
+              <td>100020</td>
+              <td>
+                <div class="ui green labels">
+                  <a class="ui label">
+                    CLOSED
+                  </a>
+                </div>
+              </td>
+              <td>Arkansas Travelers</td>
+              <td>Demo Booth</td>
+              <td>June 10, 2015</td>
+              <td>June 10, 2015</td>
+              <td class="btn-text-action"><button class="btn-text">Print</button>|<button class="btn-text">View</button>|<button class="btn-text">Duplicate</button>|<button class="btn-text">Undo</button></td>
+            </tr>
+            <tr>
+              <td>100020</td>
+              <td>
+                <div class="ui yellow labels">
+                  <a class="ui label">
+                    OPEN
+                  </a>
+                </div>
+              </td>
+              <td>Arkansas Travelers</td>
+              <td>Demo Booth</td>
+              <td>June 10, 2015</td>
+              <td>June 10, 2015</td>
+              <td class="btn-text-action"><button class="btn-text">Print</button>|<button class="btn-text">View</button>|<button class="btn-text">Duplicate</button>|<button class="btn-text">Undo</button></td>
+            </tr>
+            <tr>
+              <td>100020</td>
+              <td>
+                <div class="ui green labels">
+                  <a class="ui label">
+                    CLOSED
+                  </a>
+                </div>
+              </td>
+              <td>Arkansas Travelers</td>
+              <td>Demo Booth</td>
+              <td>June 10, 2015</td>
+              <td>June 10, 2015</td>
+              <td class="btn-text-action"><button class="btn-text">Print</button>|<button class="btn-text">View</button>|<button class="btn-text">Duplicate</button>|<button class="btn-text">Undo</button></td>
+            </tr>
+          </tbody>
+        </table>
+        
+        <div class="pagi-line">
+            <span class="pageinfo">
+            showing
+                  <strong>21-41</strong>
+                  of
+                  <strong>722</strong>
+                  records| show
+                  <select>
+                  <option value="0" selected="selected" label="10">10</option>
+                  <option value="1" label="10">20</option>
+                  <option value="2" label="50">10</option>
+                  </select>
+                  entires
+            </span>
+            <div class="ui pagination menu">
+                <div ng-controller="PaginationDemoCtrl" >
+                    <pagination total-items="bigTotalItems" ng-model="bigCurrentPage" max-size="maxSize" class="pagination-sm" boundary-links="true">
+                    <nav>
+                    <!--pagination need to be fixed with AngularJs-->
+                      <ul class="pagination">
+                        <li>
+                          <a href="#" aria-label="Previous">
+                            <span aria-hidden="true">Previous</span>
+                          </a>
+                        </li>
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li>
+                          <a href="#" aria-label="Next">
+                            <span aria-hidden="true">Next</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
+                    </pagination>
+                </div>
+            </div><!--ui-->
+        </div><!--pagi-line-->
+        </div><!--content ends-->
+      </div><!--row ends-->
+      
+
+
+      <div class="row">
+       <h3>Table with filter</h3>
+         <div class="content">
+         <table class="ui striped table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Date Joined</th>
+              <th>E-mail</th>
+              <th>Called</th>
+            </tr>
+            <tr>
+              <th>
+              <div class="ui input filter">
+                <input type="text" placeholder="Name">
+              </div>
+              </th>
+              <th>
+              <div class="ui input filter">
+                <div class="ui icon input date-picker"><input type="text" placeholder="Date" class="datepicker">
+          </div>
+              </div>
+              </th>
+              <th>
+              <div class="ui input filter">
+                <input type="text" placeholder="Email">
+              </div>
+              </th>
+              <th><a href="#">Clear Filter</a></th>
+            </tr>
+            
+          </thead>
+          <tbody>
+            <tr>
+              <td>John Lilki</td>
+              <td>September 14, 2013</td>
+              <td>jhlilk22@yahoo.com</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td>Jamie Harington</td>
+              <td>January 11, 2014</td>
+              <td>jamieharingonton@yahoo.com</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td>Jill Lewis</td>
+              <td>May 11, 2014</td>
+              <td>jilsewris22@yahoo.com</td>
+              <td>Yes</td>
+            </tr>
+             <tr>
+              <td>Jamie Harington</td>
+              <td>January 11, 2014</td>
+              <td>jamieharingonton@yahoo.com</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td>John Lilki</td>
+              <td>September 14, 2013</td>
+              <td>jhlilk22@yahoo.com</td>
+              <td>No</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="pagi-line">
+            <span class="pageinfo">
+            showing
+                  <strong>21-41</strong>
+                  of
+                  <strong>722</strong>
+                  records| show
+                  <select>
+                  <option value="0" selected="selected" label="10">10</option>
+                  <option value="1" label="10">20</option>
+                  <option value="2" label="50">10</option>
+                  </select>
+                  entires
+            </span>
+            <div class="ui pagination menu">
+                <div ng-controller="PaginationDemoCtrl" >
+                    <pagination total-items="bigTotalItems" ng-model="bigCurrentPage" max-size="maxSize" class="pagination-sm" boundary-links="true">
+                    <nav>
+                      <ul class="pagination">
+                        <li>
+                          <a href="#" aria-label="Previous">
+                            <span aria-hidden="true">Previous</span>
+                          </a>
+                        </li>
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li>
+                          <a href="#" aria-label="Next">
+                            <span aria-hidden="true">Next</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
+                    </pagination>
+                </div>
+            </div><!--ui-->
+            </div>
+        </div><!--content ends-->
+      </div><!--row ends-->
+      
+      <div class="row">
+       <h3>Table with buttons & filter</h3>
+         <div class="content">
+         <div class="btn-sec btn-right">
+            <div class="actions">
+                  <div class="ui green labeled icon button btn-right">
+                  <i class="plus left icon"></i>Create new</div>
+            </div>
+            <button class="ui primary button btn-right">
+                Action
+            </button>
+         </div>
+         
+         <table class="ui striped table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Date Joined</th>
+              <th>E-mail</th>
+              <th>Called</th>
+            </tr>
+              <tr>
+              <th>
+              <div class="ui input filter">
+                <input type="text" placeholder="Name">
+              </div>
+              </th>
+              <th>
+              <div class="ui input filter">
+                <div class="ui icon input date-picker"><input type="text" placeholder="Date" class="datepicker">
+          </div>
+              </div>
+              </th>
+              <th>
+              <div class="ui input filter">
+                <input type="text" placeholder="Email">
+              </div>
+              </th>
+              <th><a href="#">Clear Filter</a></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>John Lilki</td>
+              <td>September 14, 2013</td>
+              <td>jhlilk22@yahoo.com</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td>Jamie Harington</td>
+              <td>January 11, 2014</td>
+              <td>jamieharingonton@yahoo.com</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td>Jill Lewis</td>
+              <td>May 11, 2014</td>
+              <td>jilsewris22@yahoo.com</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td>John Lilki</td>
+              <td>September 14, 2013</td>
+              <td>jhlilk22@yahoo.com</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td>John Lilki</td>
+              <td>September 14, 2013</td>
+              <td>jhlilk22@yahoo.com</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td>Jamie Harington</td>
+              <td>January 11, 2014</td>
+              <td>jamieharingonton@yahoo.com</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td>Jill Lewis</td>
+              <td>May 11, 2014</td>
+              <td>jilsewris22@yahoo.com</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td>John Lilki</td>
+              <td>September 14, 2013</td>
+              <td>jhlilk22@yahoo.com</td>
+              <td>No</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="pagi-line">
+            <span class="pageinfo">
+            showing
+                  <strong>21-41</strong>
+                  of
+                  <strong>722</strong>
+                  records| show
+                  <select>
+                  <option value="0" selected="selected" label="10">10</option>
+                  <option value="1" label="10">20</option>
+                  <option value="2" label="50">10</option>
+                  </select>
+                  entires
+            </span>
+            <div class="ui pagination menu">
+                <div ng-controller="PaginationDemoCtrl" >
+                    <pagination total-items="bigTotalItems" ng-model="bigCurrentPage" max-size="maxSize" class="pagination-sm" boundary-links="true">
+                    <nav>
+                    <!--pagination need to be fixed with AngularJs-->
+                      <ul class="pagination">
+                        <li>
+                          <a href="#" aria-label="Previous">
+                            <span aria-hidden="true">Previous</span>
+                          </a>
+                        </li>
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li>
+                          <a href="#" aria-label="Next">
+                            <span aria-hidden="true">Next</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
+                    </pagination>
+                </div>
+            </div><!--ui-->
+            </div>
+        </div><!--content ends-->
+      </div><!--row ends-->
+      
+       <div class="row">
+       <h3>Table with checkboxes (bulkaction)</h3>
+         <div class="content">
+         <div class="btn-sec">
+          <div class="ui teal buttons actions">
+              <div class="ui simple dropdown blue right labeled icon button" tabindex="0">
+                Bulk action
+                <i class="dropdown right icon"></i>
+                <div class="menu">
+                  <div class="item">Edit</div>
+                  <div class="item">Remove</div>
+                  <div class="item">Hide</div>
+                </div><!--menu-->
+              </div>
+            </div><!--ui teal buttons ends-->
+          </div>
+          <div class="btn-sec btn-right">
+             <div class="ui green labeled icon button btn-right">
+                <i class="plus left icon"></i>Create new
+             </div>  
+             
+          </div><!--btn-sec ends-->
+         <table class="ui striped table">
+          <thead>
+            <tr>
+              <th>
+                  <div class="ui checkbox">
+                  <input type="checkbox" name="example">
+                  <label>Name</label>
+                  </div>
+              </th>
+              <th>Date Joined</th>
+              <th>E-mail</th>
+              <th>Called</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+              <div class="ui checkbox">
+                  <input type="checkbox" name="example">
+                  <label>John Lilki</label>
+              </div>
+              </td>
+              <td>September 14, 2013</td>
+              <td>jhlilk22@yahoo.com</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td>
+              <div class="ui checkbox">
+                  <input type="checkbox" name="example">
+                  <label>Jamie Harington</label>
+              </div>
+              </td>
+              <td>January 11, 2014</td>
+              <td>jamieharingonton@yahoo.com</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td><div class="ui checkbox">
+                  <input type="checkbox" name="example">
+                  <label>Jill Lewis</label>
+              </div>
+              </td>
+              <td>May 11, 2014</td>
+              <td>jilsewris22@yahoo.com</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td><div class="ui checkbox">
+                  <input type="checkbox" name="example">
+                  <label>Lara</label>
+              </div>
+              </td>
+              <td>May 12, 2014</td>
+              <td>lara294@yahoo.com</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td><div class="ui checkbox">
+                  <input type="checkbox" name="example">
+                  <label>David</label>
+              </div>
+              </td>
+              <td>Jul 11, 2014</td>
+              <td>david23@yahoo.com</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+            <td><div class="ui checkbox">
+                  <input type="checkbox" name="example">
+                  <label>Sherry</label>
+              </div>
+              </td>
+              <td>Aug 11, 2014</td>
+              <td>sherry21@yahoo.com</td>
+              <td>Yes</td>
+            </tr>
+     
+          </tbody>
+        </table>
+        
+        <div class="pagi-line">
+            <span class="pageinfo">
+            showing
+                  <strong>21-41</strong>
+                  of
+                  <strong>722</strong>
+                  records| show
+                  <select>
+                  <option value="0" selected="selected" label="10">10</option>
+                  <option value="1" label="10">20</option>
+                  <option value="2" label="50">10</option>
+                  </select>
+                  entires
+            </span>
+            <div class="ui pagination menu">
+                <div ng-controller="PaginationDemoCtrl" >
+                    <pagination total-items="bigTotalItems" ng-model="bigCurrentPage" max-size="maxSize" class="pagination-sm" boundary-links="true">
+                    <nav>
+                    <!--pagination need to be fixed with AngularJs-->
+                      <ul class="pagination">
+                        <li>
+                          <a href="#" aria-label="Previous">
+                            <span aria-hidden="true">Previous</span>
+                          </a>
+                        </li>
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li>
+                          <a href="#" aria-label="Next">
+                            <span aria-hidden="true">Next</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
+                    </pagination>
+                </div>
+            </div><!--ui-->
+        </div><!--pagi-line-->
+        </div><!--content ends-->
+      </div><!--row ends-->
+
+       <div class="row">
+       <h3>Table with inline-editing</h3>
+         <div class="content">
+          <div class="ui form line-edit form-margin-top">
+            <div class="three fields">
+              <div class="field">
+                <label>Name</label>
+                <input placeholder="Name" type="text">
+              </div>
+              <div class="field">
+                <label>Date</label>
+                <input placeholder="Date" type="text">
+              </div><!--field end-->
+              <div class="field">
+                <label>Email</label>
+                <input placeholder="Email" type="text">
+              </div><!--field end-->
+
+              <div class="btn-right btn-inline">
+                <button class="ui icon cancel button btn-right">
+                  <i class="remove icon"></i>
+                </button>
+                <button class="ui icon green button btn-right">
+                  <i class="checkmark icon"></i>
+                </button>
+             </div>
+          </div><!--threes fields end-->
+            
+          </div>
+
+         <table class="ui striped table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Date Joined</th>
+              <th>E-mail</th>
+              <th>Called</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>John Lilki</td>
+              <td>September 14, 2013</td>
+              <td>jhlilk22@yahoo.com</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td>Jamie Harington</td>
+              <td>January 11, 2014</td>
+              <td>jamieharingonton@yahoo.com</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td>Jill Lewis</td>
+              <td>May 11, 2014</td>
+              <td>jilsewris22@yahoo.com</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td>John Lilki</td>
+              <td>September 14, 2013</td>
+              <td>jhlilk22@yahoo.com</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td>John Lilki</td>
+              <td>September 14, 2013</td>
+              <td>jhlilk22@yahoo.com</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td>Jamie Harington</td>
+              <td>January 11, 2014</td>
+              <td>jamieharingonton@yahoo.com</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td>Jill Lewis</td>
+              <td>May 11, 2014</td>
+              <td>jilsewris22@yahoo.com</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td>John Lilki</td>
+              <td>September 14, 2013</td>
+              <td>jhlilk22@yahoo.com</td>
+              <td>No</td>
+            </tr>
+          </tbody>
+        </table>
+        
+        <div class="pagi-line">
+            <span class="pageinfo">
+            showing
+                  <strong>21-41</strong>
+                  of
+                  <strong>722</strong>
+                  records| show
+                  <select>
+                  <option value="0" selected="selected" label="10">10</option>
+                  <option value="1" label="10">20</option>
+                  <option value="2" label="50">10</option>
+                  </select>
+                  entires
+            </span>
+            <div class="ui pagination menu">
+                <div ng-controller="PaginationDemoCtrl" >
+                    <pagination total-items="bigTotalItems" ng-model="bigCurrentPage" max-size="maxSize" class="pagination-sm" boundary-links="true">
+                    <nav>
+                    <!--pagination need to be fixed with AngularJs-->
+                      <ul class="pagination">
+                        <li>
+                          <a href="#" aria-label="Previous">
+                            <span aria-hidden="true">Previous</span>
+                          </a>
+                        </li>
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li>
+                          <a href="#" aria-label="Next">
+                            <span aria-hidden="true">Next</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
+                    </pagination>
+                </div>
+            </div><!--ui-->
+        </div><!--pagi-line-->
+        </div><!--content ends-->
+      </div><!--row ends-->
+      
+
+
+      <div class="row">
+       <h3>Table with multi-columns with filters (7)</h3>
+         <div class="content">
+         <div class="btn-sec btn-right">
+            <div class="actions">
+                  <div class="ui green labeled icon button btn-right">
+                  <i class="plus left icon"></i>Create new</div>
+            </div>
+            <button class="ui primary button btn-right">
+                Action
+            </button>
+         </div>
+         
+         <table class="ui striped table">
+          <thead>
+            <tr>
+              <th>Inventory Item</th>
+              <th>Location</th>
+              <th>Movement Type</th>
+              <th>Originator Type</th>
+              <th>Quantity</th>
+              <th>Initiated By</th>
+              <th>Created</th>
+              <th>QOH</th>
+            </tr>
+              <tr>
+              <th>
+                <div class="ui input filter filter-sm">
+                  <input type="text" placeholder="Item">
+                </div>
+              </th>
+              <th>
+                <div class="ui input filter filter-m">
+                  <input type="text" placeholder="Location">
+                </div>
+              </th>
+              <th>
+                <div class="ui input filter filter-sm">
+                  <input type="text" placeholder="Movement">
+                </div>
+              </th>
+              <th>
+                <div class="ui input filter filter-sm">
+                  <input type="text" placeholder="Originator">
+                </div>
+              </th>
+              <th>
+                <div class="ui input filter filter-sm">
+                  <input type="text" placeholder="Quantity">
+                </div>
+              </th>
+              <th>
+                <div class="ui input filter filter-m">
+                 <input type="text" placeholder="By">
+               </div>
+              </th>
+              <th></th>
+              <th><a href="#">Clear Filter</a></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Item 001</td>
+              <td>Location name that super loooooong</td>
+              <td>Override</td>
+              <td>PurchaseOrder</td>
+              <td>10.0</td>
+              <td>wen@bypassmobile.com</td>
+              <td>07/22/15</td>
+              <td>100</td>
+            </tr>
+            <tr>
+              <td>Item 001</td>
+              <td>Stand 1</td>
+              <td>Override</td>
+              <td>PurchaseOrder</td>
+              <td>10.0</td>
+              <td>wen@bypassmobile.com</td>
+              <td>07/22/15</td>
+              <td>100</td>
+            </tr>
+            <tr>
+              <td>Item 001</td>
+              <td>Stand 1</td>
+              <td>Override</td>
+              <td>PurchaseOrder</td>
+              <td>10.0</td>
+              <td>wen@bypassmobile.com</td>
+              <td>07/22/15</td>
+              <td>100</td>
+            </tr>
+            <tr>
+              <td>Item 001</td>
+              <td>Stand 1</td>
+              <td>Override</td>
+              <td>PurchaseOrder</td>
+              <td>10.0</td>
+              <td>wen@bypassmobile.com</td>
+              <td>07/22/15</td>
+              <td>100</td>
+            </tr>
+            <tr>
+              <td>Item 001</td>
+              <td>Stand 1</td>
+              <td>Override</td>
+              <td>PurchaseOrder</td>
+              <td>10.0</td>
+              <td>wen@bypassmobile.com</td>
+              <td>07/22/15</td>
+              <td>100</td>
+            </tr>
+            <tr>
+              <td>Item 001</td>
+              <td>Stand 1</td>
+              <td>Override</td>
+              <td>PurchaseOrder</td>
+              <td>10.0</td>
+              <td>wen@bypassmobile.com</td>
+              <td>07/22/15</td>
+              <td>100</td>
+            </tr>
+            <tr>
+              <td>Item 001</td>
+              <td>Stand 1</td>
+              <td>Override</td>
+              <td>PurchaseOrder</td>
+              <td>10.0</td>
+              <td>wen@bypassmobile.com</td>
+              <td>07/22/15</td>
+              <td>100</td>
+            </tr>
+            <tr>
+              <td>Item 001</td>
+              <td>Stand 1</td>
+              <td>Override</td>
+              <td>PurchaseOrder</td>
+              <td>10.0</td>
+              <td>wen@bypassmobile.com</td>
+              <td>07/22/15</td>
+              <td>100</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="pagi-line">
+            <span class="pageinfo">
+            showing
+                  <strong>21-41</strong>
+                  of
+                  <strong>722</strong>
+                  records| show
+                  <select>
+                  <option value="0" selected="selected" label="10">10</option>
+                  <option value="1" label="10">20</option>
+                  <option value="2" label="50">10</option>
+                  </select>
+                  entires
+            </span>
+            <div class="ui pagination menu">
+                <div ng-controller="PaginationDemoCtrl" >
+                    <pagination total-items="bigTotalItems" ng-model="bigCurrentPage" max-size="maxSize" class="pagination-sm" boundary-links="true">
+                    <nav>
+                    <!--pagination need to be fixed with AngularJs-->
+                      <ul class="pagination">
+                        <li>
+                          <a href="#" aria-label="Previous">
+                            <span aria-hidden="true">Previous</span>
+                          </a>
+                        </li>
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li>
+                          <a href="#" aria-label="Next">
+                            <span aria-hidden="true">Next</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
+                    </pagination>
+                </div>
+            </div><!--ui-->
+            </div>
+        </div><!--content ends-->
+      </div><!--row ends-->
+
+
+      <div class="row">
+       <h3>Table with multi-columns & filters (9)</h3>
+         <div class="content">
+         <div class="btn-sec btn-right">
+            <div class="actions">
+                  <div class="ui green labeled icon button btn-right">
+                  <i class="plus left icon"></i>Create new</div>
+            </div>
+            <button class="ui primary button btn-right">
+                Action
+            </button>
+         </div>
+         
+         <table class="ui striped table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Category</th>
+              <th>Reporting Group</th>
+              <th>Tax Group</th>
+              <th>Price</th>
+              <th>Status</th>
+              <th>Location Type</th>
+              <th>Par Totals</th>
+              <th>Actions</th>
+            </tr>
+              <tr>
+              <th>
+                <div class="ui input filter filter-sm">
+                  <input type="text" placeholder="Name">
+                </div>
+              </th>
+              <th>
+                <div class="ui input filter filter-sm">
+                  <input type="text" placeholder="Category">
+                </div>
+              </th>
+              <th>
+                <div class="ui input filter filter-sm">
+                  <input type="text" placeholder="Report">
+                </div>
+              </th>
+              <th>
+                <div class="ui input filter filter-sm">
+                  <input type="text" placeholder="Tax">
+                </div>
+              </th>
+              <th>
+                <div class="ui input filter filter-sm">
+                  <input type="text" placeholder="Price">
+                </div>
+              </th>
+              <th></th>
+              <th>
+                <div class="ui input filter filter-sm">
+                  <input type="text" placeholder="Lo-type">
+                </div>
+              </th>
+              <th></th>
+              <th><a href="#">Clear Filter</a></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Item 001</td>
+              <td>Snack</td>
+              <td>Food</td>
+              <td>Food</td>
+              <td>10.00</td>
+              <td>
+                <div class="ui yellow labels">
+                  <a class="ui label">
+                    50%
+                  </a>
+                </div>
+              </td>
+              <td>Club</td>
+              <td>100</td>
+              <td class="btn-text-action"><button class="btn-text">Edit</button>｜<button class="btn-text">Delete</button></td>
+            </tr>
+            <tr>
+              <td>Item 001</td>
+              <td>Snack</td>
+              <td>Food</td>
+              <td>Food</td>
+              <td>20.00</td>
+              <td>
+                <div class="ui green labels">
+                  <a class="ui label">
+                    100%
+                  </a>
+                </div>
+              </td>
+              <td>Club</td>
+              <td>100</td>
+              <td class="btn-text-action"><button class="btn-text">Edit</button>｜<button class="btn-text">Delete</button></td>
+            </tr>
+            <tr>
+              <td>Item 001</td>
+              <td>Snack</td>
+              <td>Food</td>
+              <td>Food</td>
+              <td>1.00</td>
+              <td>
+                <div class="ui green labels">
+                  <a class="ui label">
+                    100%
+                  </a>
+                </div>
+              </td>
+              <td>Restaurant</td>
+              <td>100</td>
+             <td class="btn-text-action"><button class="btn-text">Edit</button>｜<button class="btn-text">Delete</button></td>
+            </tr>
+            <tr>
+              <td>Item 001</td>
+              <td>Snack</td>
+              <td>Food</td>
+              <td>Food</td>
+              <td>2.00</td>
+              <td>
+                <div class="ui red labels">
+                  <a class="ui label">
+                    0%
+                  </a>
+                </div>
+              </td>
+              <td>Concession</td>
+              <td>80</td>
+              <td class="btn-text-action"><button class="btn-text">Edit</button>｜<button class="btn-text">Delete</button></td>
+            </tr>
+            <tr>
+              <td>Item 001</td>
+              <td>Liquor</td>
+              <td>Drink</td>
+              <td>Alcohol</td>
+              <td>2.00</td>
+              <td>
+                <div class="ui green labels">
+                  <a class="ui label">
+                    100%
+                  </a>
+                </div>
+              </td>
+              <td>Club</td>
+              <td>100</td>
+              <td class="btn-text-action"><button class="btn-text">Edit</button>｜<button class="btn-text">Delete</button></td>
+            </tr>
+            <tr>
+              <td>Item 001</td>
+              <td>Soda</td>
+              <td>Drink</td>
+              <td>Food</td>
+              <td>1.50</td>
+              <td>
+                <div class="ui green labels">
+                  <a class="ui label">
+                    100%
+                  </a>
+                </div>
+              </td>
+              <td>Club</td>
+              <td>100</td>
+              <td class="btn-text-action"><button class="btn-text">Edit</button>｜<button class="btn-text">Delete</button></td>
+            </tr>
+            <tr>
+              <td>Item 001</td>
+              <td>Soda</td>
+              <td>Drink</td>
+              <td>Food</td>
+              <td>1.00</td>
+              <td>
+                <div class="ui green labels">
+                  <a class="ui label">
+                    100%
+                  </a>
+                </div>
+              </td>
+              <td>Concession</td>
+              <td>10</td>
+              <td class="btn-text-action"><button class="btn-text">Edit</button>｜<button class="btn-text">Delete</button></td>
+            </tr>
+            <tr>
+              <td>Item 001</td>
+              <td>Soda</td>
+              <td>Drink</td>
+              <td>Food</td>
+              <td>2.00</td>
+              <td>
+                <div class="ui green labels">
+                  <a class="ui label">
+                    100%
+                  </a>
+                </div>
+              </td>
+              <td>Club</td>
+              <td>90</td>
+              <td class="btn-text-action"><button class="btn-text">Edit</button>｜<button class="btn-text">Delete</button></td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="pagi-line">
+            <span class="pageinfo">
+            showing
+                  <strong>21-41</strong>
+                  of
+                  <strong>722</strong>
+                  records| show
+                  <select>
+                  <option value="0" selected="selected" label="10">10</option>
+                  <option value="1" label="10">20</option>
+                  <option value="2" label="50">10</option>
+                  </select>
+                  entires
+            </span>
+            <div class="ui pagination menu">
+                <div ng-controller="PaginationDemoCtrl" >
+                    <pagination total-items="bigTotalItems" ng-model="bigCurrentPage" max-size="maxSize" class="pagination-sm" boundary-links="true">
+                    <nav>
+                    <!--pagination need to be fixed with AngularJs-->
+                      <ul class="pagination">
+                        <li>
+                          <a href="#" aria-label="Previous">
+                            <span aria-hidden="true">Previous</span>
+                          </a>
+                        </li>
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li>
+                          <a href="#" aria-label="Next">
+                            <span aria-hidden="true">Next</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
+                    </pagination>
+                </div>
+            </div><!--ui-->
+            </div>
+        </div><!--content ends-->
+      </div><!--row ends-->
+</div><!-- /container -->
+<script src="js/customize.js"></script>
+</body>
+</html>

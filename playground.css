@@ -1,0 +1,29 @@
+@charset "UTF-8";
+/* CSS Document */
+/*Reset*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/*navbar*/
+.navbar{
+  height: 2.5rem;
+  width: 100%;
+  background-color: rgba(0,136,255,.1);
+  /*-moz-box-shadow:1px 0px 0px #999999;
+  box-shadow: 1px 0px 0px #999999;*/
+  padding: 0.5rem 1.2rem;
+  border-bottom: 1px solid #DBEAF6;
+}
+.btn-fix-bar{
+	background-color: #f9f9f9;
+	bottom: 0;
+	height: 4rem;
+	position: fixed;
+	width:90%;
+	border-top: 1px solid #EAEAEA;
+}
+.btn-sec-bottom{
+	padding-right: 10%;
+	padding-top: 1rem;
+}
