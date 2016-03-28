@@ -14,10 +14,15 @@
     <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.css">
     <link rel="stylesheet" type="text/css" href="demo_layout.css">
     <link rel="stylesheet" type="text/css" href="customized.css">
+    <!--fonts-->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 
     <!-- Latest compiled and minified JavaScript -->
     <script src="js/example.js"></script>
     <script src="https://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.13.4.js"></script>
+
   </head>
   <body>
 <div class="container">
@@ -36,12 +41,14 @@
           <h1>Collections</h1>
       </div> <!-- /demo-headline -->
 
+
+
       <div class="row">
-       <h3>Table with data</h3>
+       <h3>Table with data (sortable)</h3>
          <div class="content">
-         <table class="ui striped table">
+         <table class="ui sortable striped table">
           <thead>
-            <tr>
+            <tr> 
               <th>Name</th>
               <th>Date Joined</th>
               <th>E-mail</th>
@@ -148,10 +155,10 @@
        <div class="row">
        <h3>Table with multi-columns & label & actions</h3>
          <div class="content">
-         <table class="ui striped table">
+         <table class="ui sortable striped table">
            <thead>
             <tr>
-              <th>ID</th>
+              <th class="sorted descending">ID</th>
               <th>Status</th>
               <th>Source</th>
               <th>Destination</th>
@@ -175,7 +182,7 @@
               <td>June 10, 2015</td>
             </tr>
             <tr>
-              <td><a>100020</a></td>
+              <td><a>100021</a></td>
               <td>
                 <div class="ui green labels">
                   <a class="ui label">
@@ -189,7 +196,7 @@
               <td>June 10, 2015</td>
             </tr>
             <tr>
-              <td><a>100020</a></td>
+              <td><a>100025</a></td>
               <td>
                 <div class="ui red labels">
                   <a class="ui label">
@@ -197,13 +204,13 @@
                   </a>
                 </div>
               </td>
-              <td>Arkansas Travelers</td>
+              <td>Bypassmobile</td>
               <td>Demo Booth</td>
-              <td>June 10, 2015</td>
-              <td>June 10, 2015</td>
+              <td>June 11, 2015</td>
+              <td>June 11, 2015</td>
             </tr>
             <tr>
-              <td><a>100020</a></td>
+              <td><a>100027</a></td>
               <td>
                 <div class="ui green labels">
                   <a class="ui label">
@@ -211,13 +218,13 @@
                   </a>
                 </div>
               </td>
-              <td>Arkansas Travelers</td>
-              <td>Demo Booth</td>
-              <td>June 10, 2015</td>
-              <td>June 10, 2015</td>
+              <td>Others</td>
+              <td>Earth</td>
+              <td>June 12, 2015</td>
+              <td>June 12, 2015</td>
             </tr>
             <tr>
-              <td><a>100020</a></td>
+              <td><a>100096</a></td>
               <td>
                 <div class="ui yellow labels">
                   <a class="ui label">
@@ -226,12 +233,12 @@
                 </div>
               </td>
               <td>Arkansas Travelers</td>
-              <td>Demo Booth</td>
-              <td>June 10, 2015</td>
-              <td>June 10, 2015</td>
+              <td>Kitchen</td>
+              <td>June 12, 2015</td>
+              <td>June 15, 2015</td>
             </tr>
             <tr>
-              <td><a>100020</a></td>
+              <td><a>100360</a></td>
               <td>
                 <div class="ui green labels">
                   <a class="ui label">
@@ -241,8 +248,8 @@
               </td>
               <td>Arkansas Travelers</td>
               <td>Demo Booth</td>
-              <td>June 10, 2015</td>
-              <td>June 10, 2015</td>
+              <td>June 16, 2015</td>
+              <td>June 16, 2015</td>
             </tr>
           </tbody>
         </table>
@@ -291,115 +298,6 @@
         </div><!--content ends-->
       </div><!--row ends-->
       
-
-
-      <div class="row">
-       <h3>Table with filter</h3>
-         <div class="content">
-         <table class="ui striped table">
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Date Joined</th>
-              <th>E-mail</th>
-              <th>Called</th>
-            </tr>
-            <tr>
-              <th>
-              <div class="ui input filter">
-                <input type="text" placeholder="Name">
-              </div>
-              </th>
-              <th>
-              <div class="ui input filter">
-                <div class="ui icon input date-picker"><input type="text" placeholder="Date" class="datepicker">
-          </div>
-              </div>
-              </th>
-              <th>
-              <div class="ui input filter">
-                <input type="text" placeholder="Email">
-              </div>
-              </th>
-              <th><a href="#">Clear Filter</a></th>
-            </tr>
-            
-          </thead>
-          <tbody>
-            <tr>
-              <td><a>John Lilki</a></td>
-              <td>September 14, 2013</td>
-              <td>jhlilk22@yahoo.com</td>
-              <td>No</td>
-            </tr>
-            <tr>
-              <td><a>Jamie Harington</a></td>
-              <td>January 11, 2014</td>
-              <td>jamieharingonton@yahoo.com</td>
-              <td>Yes</td>
-            </tr>
-            <tr>
-              <td><a>Jill Lewis</a></td>
-              <td>May 11, 2014</td>
-              <td>jilsewris22@yahoo.com</td>
-              <td>Yes</td>
-            </tr>
-             <tr>
-              <td><a>Jamie Harington</a></td>
-              <td>January 11, 2014</td>
-              <td>jamieharingonton@yahoo.com</td>
-              <td>Yes</td>
-            </tr>
-            <tr>
-              <td><a>John Lilki</a></td>
-              <td>September 14, 2013</td>
-              <td>jhlilk22@yahoo.com</td>
-              <td>No</td>
-            </tr>
-          </tbody>
-        </table>
-        <div class="pagi-line">
-            <span class="pageinfo">
-            showing
-                  <strong>21-41</strong>
-                  of
-                  <strong>722</strong>
-                  records| show
-                  <select>
-                  <option value="0" selected="selected" label="10">10</option>
-                  <option value="1" label="10">20</option>
-                  <option value="2" label="50">10</option>
-                  </select>
-                  entires
-            </span>
-            <div class="ui pagination menu">
-                <div ng-controller="PaginationDemoCtrl" >
-                    <pagination total-items="bigTotalItems" ng-model="bigCurrentPage" max-size="maxSize" class="pagination-sm" boundary-links="true">
-                    <nav>
-                      <ul class="pagination">
-                        <li>
-                          <a href="#" aria-label="Previous">
-                            <span aria-hidden="true">Previous</span>
-                          </a>
-                        </li>
-                        <li class="active"><a href="#">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li><a href="#">4</a></li>
-                        <li><a href="#">5</a></li>
-                        <li>
-                          <a href="#" aria-label="Next">
-                            <span aria-hidden="true">Next</span>
-                          </a>
-                        </li>
-                      </ul>
-                    </nav>
-                    </pagination>
-                </div>
-            </div><!--ui-->
-            </div>
-        </div><!--content ends-->
-      </div><!--row ends-->
       
       <div class="row">
        <h3>Table with buttons & filter</h3>
@@ -540,8 +438,9 @@
        <div class="row">
        <h3>Table with checkboxes (bulkaction)</h3>
          <div class="content">
-         <div class="btn-sec">
-          <div class="ui teal buttons actions">
+          <div class="btn-sec btn-right">
+            <div class="ui teal buttons actions">
+              
               <div class="ui simple dropdown blue right labeled icon button" tabindex="0">
                 Bulk action
                 <i class="dropdown right icon"></i>
@@ -552,20 +451,19 @@
                 </div><!--menu-->
               </div>
             </div><!--ui teal buttons ends-->
-          </div>
-          <div class="btn-sec btn-right">
+
              <div class="ui green labeled icon button btn-right">
                 <i class="plus left icon"></i>Create new
              </div>  
              
           </div><!--btn-sec ends-->
-         <table class="ui striped table">
+         <table class="ui sortable striped table">
           <thead>
             <tr>
               <th>
                   <div class="ui checkbox">
                   <input type="checkbox" name="example">
-                  <label>Name</label>
+                  <label class="sorted descending">Name</label>
                   </div>
               </th>
               <th>Date Joined</th>
@@ -684,330 +582,6 @@
         </div><!--content ends-->
       </div><!--row ends-->
 
-       <div class="row">
-       <h3>Table with inline-editing</h3>
-         <div class="content">
-          <div class="ui form line-edit form-margin-top">
-            <div class="three fields">
-              <div class="field">
-                <label>Name</label>
-                <input placeholder="Name" type="text">
-              </div>
-              <div class="field">
-                <label>Date</label>
-                <input placeholder="Date" type="text">
-              </div><!--field end-->
-              <div class="field">
-                <label>Email</label>
-                <input placeholder="Email" type="text">
-              </div><!--field end-->
-
-              <div class="btn-right btn-inline">
-                <button class="ui icon cancel button btn-right">
-                  <i class="remove icon"></i>
-                </button>
-                <button class="ui icon green button btn-right">
-                  <i class="checkmark icon"></i>
-                </button>
-             </div>
-          </div><!--threes fields end-->
-            
-          </div>
-
-         <table class="ui striped table">
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Date Joined</th>
-              <th>E-mail</th>
-              <th>Called</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><a>John Lilki</a></td>
-              <td>September 14, 2013</td>
-              <td>jhlilk22@yahoo.com</td>
-              <td>No</td>
-            </tr>
-            <tr>
-              <td><a>Jamie Harington</a></td>
-              <td>January 11, 2014</td>
-              <td>jamieharingonton@yahoo.com</td>
-              <td>Yes</td>
-            </tr>
-            <tr>
-              <td><a>Jill Lewis</a></td>
-              <td>May 11, 2014</td>
-              <td>jilsewris22@yahoo.com</td>
-              <td>Yes</td>
-            </tr>
-            <tr>
-              <td><a>John Lilki</a></td>
-              <td>September 14, 2013</td>
-              <td>jhlilk22@yahoo.com</td>
-              <td>No</td>
-            </tr>
-            <tr>
-              <td><a>John Lilki</a></td>
-              <td>September 14, 2013</td>
-              <td>jhlilk22@yahoo.com</td>
-              <td>No</td>
-            </tr>
-            <tr>
-              <td><a>Jamie Harington</a></td>
-              <td>January 11, 2014</td>
-              <td>jamieharingonton@yahoo.com</td>
-              <td>Yes</td>
-            </tr>
-            <tr>
-              <td><a>Jill Lewis</a></td>
-              <td>May 11, 2014</td>
-              <td>jilsewris22@yahoo.com</td>
-              <td>Yes</td>
-            </tr>
-            <tr>
-              <td><a>John Lilki</a></td>
-              <td>September 14, 2013</td>
-              <td>jhlilk22@yahoo.com</td>
-              <td>No</td>
-            </tr>
-          </tbody>
-        </table>
-        
-        <div class="pagi-line">
-            <span class="pageinfo">
-            showing
-                  <strong>21-41</strong>
-                  of
-                  <strong>722</strong>
-                  records| show
-                  <select>
-                  <option value="0" selected="selected" label="10">10</option>
-                  <option value="1" label="10">20</option>
-                  <option value="2" label="50">10</option>
-                  </select>
-                  entires
-            </span>
-            <div class="ui pagination menu">
-                <div ng-controller="PaginationDemoCtrl" >
-                    <pagination total-items="bigTotalItems" ng-model="bigCurrentPage" max-size="maxSize" class="pagination-sm" boundary-links="true">
-                    <nav>
-                    <!--pagination need to be fixed with AngularJs-->
-                      <ul class="pagination">
-                        <li>
-                          <a href="#" aria-label="Previous">
-                            <span aria-hidden="true">Previous</span>
-                          </a>
-                        </li>
-                        <li class="active"><a href="#">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li><a href="#">4</a></li>
-                        <li><a href="#">5</a></li>
-                        <li>
-                          <a href="#" aria-label="Next">
-                            <span aria-hidden="true">Next</span>
-                          </a>
-                        </li>
-                      </ul>
-                    </nav>
-                    </pagination>
-                </div>
-            </div><!--ui-->
-        </div><!--pagi-line-->
-        </div><!--content ends-->
-      </div><!--row ends-->
-      
-
-
-      <div class="row">
-       <h3>Table with multi-columns with filters (7)</h3>
-         <div class="content">
-         <div class="btn-sec btn-right">
-            <div class="actions">
-                  <div class="ui green labeled icon button btn-right">
-                  <i class="plus left icon"></i>Create new</div>
-            </div>
-            <button class="ui primary button btn-right">
-                Action
-            </button>
-         </div>
-         
-         <table class="ui striped table">
-          <thead>
-            <tr>
-              <th>Inventory Item</th>
-              <th>Location</th>
-              <th>Movement Type</th>
-              <th>Originator Type</th>
-              <th>Quantity</th>
-              <th>Initiated By</th>
-              <th>Created</th>
-              <th>QOH</th>
-            </tr>
-              <tr>
-              <th>
-                <div class="ui input filter filter-sm">
-                  <input type="text" placeholder="Item">
-                </div>
-              </th>
-              <th>
-                <div class="ui input filter filter-m">
-                  <input type="text" placeholder="Location">
-                </div>
-              </th>
-              <th>
-                <div class="ui input filter filter-sm">
-                  <input type="text" placeholder="Movement">
-                </div>
-              </th>
-              <th>
-                <div class="ui input filter filter-sm">
-                  <input type="text" placeholder="Originator">
-                </div>
-              </th>
-              <th>
-                <div class="ui input filter filter-sm">
-                  <input type="text" placeholder="Quantity">
-                </div>
-              </th>
-              <th>
-                <div class="ui input filter filter-m">
-                 <input type="text" placeholder="By">
-               </div>
-              </th>
-              <th></th>
-              <th><a href="#">Clear Filter</a></th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><a>Item 001</a></td>
-              <td>Location name that super loooooong</td>
-              <td>Override</td>
-              <td>PurchaseOrder</td>
-              <td>10.0</td>
-              <td>wen@bypassmobile.com</td>
-              <td>07/22/15</td>
-              <td>100</td>
-            </tr>
-            <tr>
-              <td><a>Item 001</a></td>
-              <td>Stand 1</td>
-              <td>Override</td>
-              <td>PurchaseOrder</td>
-              <td>10.0</td>
-              <td>wen@bypassmobile.com</td>
-              <td>07/22/15</td>
-              <td>100</td>
-            </tr>
-            <tr>
-              <td><a>Item 001</a></td>
-              <td>Stand 1</td>
-              <td>Override</td>
-              <td>PurchaseOrder</td>
-              <td>10.0</td>
-              <td>wen@bypassmobile.com</td>
-              <td>07/22/15</td>
-              <td>100</td>
-            </tr>
-            <tr>
-              <td><a>Item 001</a></td>
-              <td>Stand 1</td>
-              <td>Override</td>
-              <td>PurchaseOrder</td>
-              <td>10.0</td>
-              <td>wen@bypassmobile.com</td>
-              <td>07/22/15</td>
-              <td>100</td>
-            </tr>
-            <tr>
-              <td><a>Item 001</a></td>
-              <td>Stand 1</td>
-              <td>Override</td>
-              <td>PurchaseOrder</td>
-              <td>10.0</td>
-              <td>wen@bypassmobile.com</td>
-              <td>07/22/15</td>
-              <td>100</td>
-            </tr>
-            <tr>
-              <td><a>Item 001</a></td>
-              <td>Stand 1</td>
-              <td>Override</td>
-              <td>PurchaseOrder</td>
-              <td>10.0</td>
-              <td>wen@bypassmobile.com</td>
-              <td>07/22/15</td>
-              <td>100</td>
-            </tr>
-            <tr>
-              <td><a>Item 001</a></td>
-              <td>Stand 1</td>
-              <td>Override</td>
-              <td>PurchaseOrder</td>
-              <td>10.0</td>
-              <td>wen@bypassmobile.com</td>
-              <td>07/22/15</td>
-              <td>100</td>
-            </tr>
-            <tr>
-              <td><a>Item 001</a></td>
-              <td>Stand 1</td>
-              <td>Override</td>
-              <td>PurchaseOrder</td>
-              <td>10.0</td>
-              <td>wen@bypassmobile.com</td>
-              <td>07/22/15</td>
-              <td>100</td>
-            </tr>
-          </tbody>
-        </table>
-        <div class="pagi-line">
-            <span class="pageinfo">
-            showing
-                  <strong>21-41</strong>
-                  of
-                  <strong>722</strong>
-                  records| show
-                  <select>
-                  <option value="0" selected="selected" label="10">10</option>
-                  <option value="1" label="10">20</option>
-                  <option value="2" label="50">10</option>
-                  </select>
-                  entires
-            </span>
-            <div class="ui pagination menu">
-                <div ng-controller="PaginationDemoCtrl" >
-                    <pagination total-items="bigTotalItems" ng-model="bigCurrentPage" max-size="maxSize" class="pagination-sm" boundary-links="true">
-                    <nav>
-                    <!--pagination need to be fixed with AngularJs-->
-                      <ul class="pagination">
-                        <li>
-                          <a href="#" aria-label="Previous">
-                            <span aria-hidden="true">Previous</span>
-                          </a>
-                        </li>
-                        <li class="active"><a href="#">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li><a href="#">4</a></li>
-                        <li><a href="#">5</a></li>
-                        <li>
-                          <a href="#" aria-label="Next">
-                            <span aria-hidden="true">Next</span>
-                          </a>
-                        </li>
-                      </ul>
-                    </nav>
-                    </pagination>
-                </div>
-            </div><!--ui-->
-            </div>
-        </div><!--content ends-->
-      </div><!--row ends-->
-
 
       <div class="row">
        <h3>Table with multi-columns & filters (9)</h3>
@@ -1022,7 +596,7 @@
             </button>
          </div>
          
-         <table class="ui striped table">
+         <table class="ui sortable striped table">
           <thead>
             <tr>
               <th>Name</th>
@@ -1244,6 +818,31 @@
         </div><!--content ends-->
       </div><!--row ends-->
 </div><!-- /container -->
-<script src="js/customize.js"></script>
+    <!--sortable table-->
+    <script src="js/customize.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.tablesort.min.js"></script>
+    <script type="text/javascript">
+
+      $(function() {
+
+        var table = $('<table class="ex-2"></table>');
+        table.append('<thead><tr><th class="number">Number</th></tr></thead>');
+        var tbody = $('<tbody></tbody>');
+        
+        for(var i = 0; i<6000; i++) {
+          tbody.append('<tr><td>' + Math.floor(Math.random() * 100) + '</td></tr>');
+        }
+        table.append(tbody);
+        $('.example.ex-2').append(table);
+
+        $('table').tablesort().data('tablesort');
+
+        $('thead th.number').data('sortBy', function(th, td, sorter) {
+          return parseInt(td.text(), 10);
+        });
+
+      });
+    </script>
 </body>
 </html>
