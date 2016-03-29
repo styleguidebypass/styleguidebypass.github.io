@@ -45,6 +45,10 @@
 
       <div class="row">
        <h3>Table with data (sortable)</h3>
+         <div class="ui ignored navy message col-m">
+            <b>Mobile site</b>
+            <p>It's not an action that we encourage users to do on mobile, so on mobile view, we need bigger filter input box, but sort design should keep simple.<p>
+          </div>
          <div class="content">
          <table class="ui sortable striped table">
           <thead>
@@ -321,26 +325,26 @@
               <th>Called</th>
             </tr>
               <tr>
-              <th>
+              <th class="no-sort">
               <div class="ui input filter">
-                <input type="text" placeholder="Name">
+                <input id="filter" type="text" placeholder="Name">
               </div>
               </th>
-              <th>
+              <th class="no-sort">
               <div class="ui input filter">
                 <div class="ui icon input date-picker"><input type="text" placeholder="Date" class="datepicker">
           </div>
               </div>
               </th>
-              <th>
+              <th class="no-sort">
               <div class="ui input filter">
-                <input type="text" placeholder="Email">
+                <input id="filter" type="text" placeholder="Email">
               </div>
               </th>
               <th><a href="#">Clear Filter</a></th>
             </tr>
           </thead>
-          <tbody>
+          <tbody class="searchable">
             <tr>
               <td><a>John Lilki</a></td>
               <td>September 14, 2013</td>
@@ -441,8 +445,8 @@
           <div class="btn-sec btn-right">
             <div class="ui teal buttons actions">
 
-              <div class="ui simple dropdown blue right labeled icon button" tabindex="0">
-                Bulk action
+              <div class="ui primary right labeled icon button simple dropdown" tabindex="0">
+                Actions
                 <i class="dropdown right icon"></i>
                 <div class="menu">
                   <div class="item">Edit</div>
@@ -581,268 +585,57 @@
         </div><!--pagi-line-->
         </div><!--content ends-->
       </div><!--row ends-->
-
-
-      <div class="row">
-       <h3>Table with multi-columns & filters (9)</h3>
-         <div class="content">
-         <div class="btn-sec btn-right">
-            <div class="actions">
-                  <div class="ui green labeled icon button btn-right">
-                  <i class="plus left icon"></i>Create new</div>
-            </div>
-            <button class="ui primary button btn-right">
-                Action
-            </button>
-         </div>
-         
-         <table class="ui sortable striped table">
-          <thead>
-            <tr>
-              <th class="sorted descending">Name</th>
-              <th>Category</th>
-              <th>Reporting Group</th>
-              <th>Tax Group</th>
-              <th>Price</th>
-              <th>Status</th>
-              <th>Location Type</th>
-              <th>Par Totals</th>
-            </tr>
-              <tr>
-              <th>
-                <div class="ui input filter filter-sm">
-                  <input type="text" placeholder="Name">
-                </div>
-              </th>
-              <th>
-                <div class="ui input filter filter-sm">
-                  <input type="text" placeholder="Category">
-                </div>
-              </th>
-              <th>
-                <div class="ui input filter filter-sm">
-                  <input type="text" placeholder="Report">
-                </div>
-              </th>
-              <th>
-                <div class="ui input filter filter-sm">
-                  <input type="text" placeholder="Tax">
-                </div>
-              </th>
-              <th>
-                <div class="ui input filter filter-sm">
-                  <input type="text" placeholder="Price">
-                </div>
-              </th>
-              <th></th>
-              <th>
-                <div class="ui input filter filter-sm">
-                  <input type="text" placeholder="Lo-type">
-                </div>
-              </th>
-              <th><a href="#">Clear Filter</a></th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><a>Item 001</a></td>
-              <td>Snack</td>
-              <td>Food</td>
-              <td>Food</td>
-              <td>10.00</td>
-              <td>
-                <div class="ui yellow labels">
-                  <a class="ui label">
-                    50%
-                  </a>
-                </div>
-              </td>
-              <td>Club</td>
-              <td>100</td>
-            </tr>
-            <tr>
-              <td><a>Item 001</a></td>
-              <td>Snack</td>
-              <td>Food</td>
-              <td>Food</td>
-              <td>20.00</td>
-              <td>
-                <div class="ui green labels">
-                  <a class="ui label">
-                    100%
-                  </a>
-                </div>
-              </td>
-              <td>Club</td>
-              <td>100</td>
-            </tr>
-            <tr>
-              <td><a>Item 001</a></td>
-              <td>Snack</td>
-              <td>Food</td>
-              <td>Food</td>
-              <td>1.00</td>
-              <td>
-                <div class="ui green labels">
-                  <a class="ui label">
-                    100%
-                  </a>
-                </div>
-              </td>
-              <td>Restaurant</td>
-              <td>100</td>
-            </tr>
-            <tr>
-              <td><a>Item 001</a></td>
-              <td>Snack</td>
-              <td>Food</td>
-              <td>Food</td>
-              <td>2.00</td>
-              <td>
-                <div class="ui red labels">
-                  <a class="ui label">
-                    0%
-                  </a>
-                </div>
-              </td>
-              <td>Concession</td>
-              <td>80</td>
-            </tr>
-            <tr>
-              <td><a>Item 001</a></td>
-              <td>Liquor</td>
-              <td>Drink</td>
-              <td>Alcohol</td>
-              <td>2.00</td>
-              <td>
-                <div class="ui green labels">
-                  <a class="ui label">
-                    100%
-                  </a>
-                </div>
-              </td>
-              <td>Club</td>
-              <td>100</td>
-            </tr>
-            <tr>
-              <td><a>Item 001</a></td>
-              <td>Soda</td>
-              <td>Drink</td>
-              <td>Food</td>
-              <td>1.50</td>
-              <td>
-                <div class="ui green labels">
-                  <a class="ui label">
-                    100%
-                  </a>
-                </div>
-              </td>
-              <td>Club</td>
-              <td>100</td>
-            </tr>
-            <tr>
-              <td><a>Item 001</a></td>
-              <td>Soda</td>
-              <td>Drink</td>
-              <td>Food</td>
-              <td>1.00</td>
-              <td>
-                <div class="ui green labels">
-                  <a class="ui label">
-                    100%
-                  </a>
-                </div>
-              </td>
-              <td>Concession</td>
-              <td>10</td>
-            </tr>
-            <tr>
-              <td><a>Item 001</a></td>
-              <td>Soda</td>
-              <td>Drink</td>
-              <td>Food</td>
-              <td>2.00</td>
-              <td>
-                <div class="ui green labels">
-                  <a class="ui label">
-                    100%
-                  </a>
-                </div>
-              </td>
-              <td>Club</td>
-              <td>90</td>
-            </tr>
-          </tbody>
-        </table>
-        <div class="pagi-line">
-            <span class="pageinfo">
-            showing
-                  <strong>21-41</strong>
-                  of
-                  <strong>722</strong>
-                  records| show
-                  <select>
-                  <option value="0" selected="selected" label="10">10</option>
-                  <option value="1" label="10">20</option>
-                  <option value="2" label="50">10</option>
-                  </select>
-                  entires
-            </span>
-            <div class="ui pagination menu">
-                <div ng-controller="PaginationDemoCtrl" >
-                    <pagination total-items="bigTotalItems" ng-model="bigCurrentPage" max-size="maxSize" class="pagination-sm" boundary-links="true">
-                    <nav>
-                    <!--pagination need to be fixed with AngularJs-->
-                      <ul class="pagination">
-                        <li>
-                          <a href="#" aria-label="Previous">
-                            <span aria-hidden="true">Previous</span>
-                          </a>
-                        </li>
-                        <li class="active"><a href="#">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li><a href="#">4</a></li>
-                        <li><a href="#">5</a></li>
-                        <li>
-                          <a href="#" aria-label="Next">
-                            <span aria-hidden="true">Next</span>
-                          </a>
-                        </li>
-                      </ul>
-                    </nav>
-                    </pagination>
-                </div>
-            </div><!--ui-->
-            </div>
-        </div><!--content ends-->
-      </div><!--row ends-->
 </div><!-- /container -->
-    <!--sortable table-->
-    <script src="js/customize.js"></script>
-    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <script src="js/jquery.tablesort.min.js"></script>
-    <script type="text/javascript">
 
-      $(function() {
 
-        var table = $('<table class="ex-2"></table>');
-        table.append('<thead><tr><th class="number">Number</th></tr></thead>');
-        var tbody = $('<tbody></tbody>');
-        
-        for(var i = 0; i<6000; i++) {
-          tbody.append('<tr><td>' + Math.floor(Math.random() * 100) + '</td></tr>');
-        }
-        table.append(tbody);
-        $('.example.ex-2').append(table);
+<!--customized js-->
+<script src="js/customize.js"></script>
 
-        $('table').tablesort().data('tablesort');
 
-        $('thead th.number').data('sortBy', function(th, td, sorter) {
-          return parseInt(td.text(), 10);
-        });
+<!--sortable table-->
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="js/jquery.tablesort.min.js"></script>
+<script type="text/javascript">
+    $(function() {
+
+      var table = $('<table class="ex-2"></table>');
+      table.append('<thead><tr><th class="number">Number</th></tr></thead>');
+      var tbody = $('<tbody></tbody>');
+      
+      for(var i = 0; i<6000; i++) {
+        tbody.append('<tr><td>' + Math.floor(Math.random() * 100) + '</td></tr>');
+      }
+      table.append(tbody);
+      $('.example.ex-2').append(table);
+
+      $('table').tablesort().data('tablesort');
+
+      $('thead th.number').data('sortBy', function(th, td, sorter) {
+        return parseInt(td.text(), 10);
+      });
 
       });
-    </script>
+</script>
+
+<!--filterable table-->
+<script>
+$(document).ready(function () {
+
+(function ($) {
+
+    $('#filter').keyup(function () {
+
+        var rex = new RegExp($(this).val(), 'i');
+        $('.searchable tr').hide();
+        $('.searchable tr').filter(function () {
+            return rex.test($(this).text());
+        }).show();
+
+    })
+
+}(jQuery));
+
+});
+</script>
 </body>
 </html>

@@ -85,7 +85,7 @@ a:hover{text-decoration: underline;}
 /*tabs*/
 .tabular{width:100%;}
 .ui.button{
-   padding: 0.58571429em 2.3em 0.58571429em;
+   padding: 0.53571429em 2.3em 0.53571429em;
 }
 /*title*/
 .title-bar{
@@ -244,7 +244,7 @@ select.ui.dropdown{
     color: #1472B0;
 }
 .ui.icon.buttons .button, .ui.icon.button {
-    padding: 0.58571429em 0.58571429em 0.58571429em;
+    padding: 0.53571429em 0.53571429em 0.53571429em;
 }
 /*Pagination*/
 .ui.menu {background: none;}
