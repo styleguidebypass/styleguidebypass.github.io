@@ -783,7 +783,7 @@ form.ui.form > .field > .ui.fluid.search.selection.dropdown{
 }
 .page-right{
   min-width: 30rem;
-  min-height: 900px;
+  min-height: 700px;
   margin-top: 0px;
   margin-left: 220px;
 }
@@ -804,6 +804,18 @@ form.ui.form > .field > .ui.fluid.search.selection.dropdown{
 
 }
 
+/*fixed footer*/
+.btn-fix-bar{
+  background-color: #F9F9F9;
+  border-top: 1px solid #DADADA;
+  height: 60px;
+  display: block;
+  position:absolute;
+  left:0px;
+  bottom:0;
+  width:100%;
+}
+.btn-sec-bottom{padding: 10px 15px 10px 0px;}
 /*margins*/
 .left-5{margin-left:5px;}
 .right-5{margin-right:5px !important;}
