@@ -427,7 +427,10 @@ tr:hover{
     background-color: #f9f9f9;
 }
 .ui.striped.table > tr:nth-child(2n), .ui.striped.table tbody tr:nth-child(2n) {
-    background-color: #ffffff;
+    background-color: #fcfcfc;
+}
+.ui.striped.table > tr:nth-child(2n), .ui.striped.table tbody tr:nth-child(2n):hover {
+    background-color: #f9f9f9;
 }
 .ui.table {margin:0.6em 0em;}
 .ui.table thead th{
