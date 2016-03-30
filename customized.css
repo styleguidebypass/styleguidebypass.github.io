@@ -733,7 +733,7 @@ form.ui.form > .field > .ui.fluid.search.selection.dropdown{
 .full > .ui.menu{
   z-index: 1;
   width: 220px;
-  height: 95%;
+  height: 96%;
   float: left;
   position: fixed;
   }
@@ -775,7 +775,7 @@ form.ui.form > .field > .ui.fluid.search.selection.dropdown{
   margin-top: 0px;
   margin-left: 220px;
 }
-.page-content{padding: 4.5rem 2rem 5rem 2rem;}
+.page-content{padding: 1.5rem 2rem 5rem 2rem;}
 
 /*breadcrumb*/
 .breadcrumb{
