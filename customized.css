@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* CSS Document */
 /*Reset*/
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -56,7 +56,7 @@ a:hover{text-decoration: underline;}
 .container {
   min-height: 100%;
   /* equal to footer height */
-  margin-bottom: -70px; 
+  margin-bottom: -70px;
   position: relative;
 }
 .container:after {
@@ -198,9 +198,9 @@ a:hover{text-decoration: underline;}
 /*Dropdown*/
 select.ui.dropdown{
   height:31px;
-} 
+}
 .ui.selection.dropdown{
-  min-height: 1.5em; 
+  min-height: 1.5em;
   padding: 0.52em 2.6em 0.52em 1em;
 }
 .dropdown-sm{width:50%;}
@@ -402,7 +402,7 @@ select.ui.dropdown{
 /*Filter*/
 .ui.input.filter input{
   padding: 0.48rem 1rem;
-  } 
+  }
 
 .ui.input.filter-sm input {max-width: 5.5rem !important;}
 .ui.input.filter-m input {max-width: 9rem !important;}
@@ -430,7 +430,7 @@ tr:hover{
     background-color: #ffffff;
 }
 .ui.table {margin:0.6em 0em;}
-.ui.table thead th{    
+.ui.table thead th{
   padding: 0.7207143em 0.71428571em;
 }
 table {
@@ -475,7 +475,7 @@ tr.greyrow2{background-color: #EEEEEE;}
 .ui.label{border-radius:0.2rem;}
 
 .ui.labels .label, .ui.label{
-  font-size:11px; 
+  font-size:11px;
 }
 /*Table row label*/
 .navy {
@@ -494,13 +494,13 @@ form h4{
 }
 .form-left{
   width:49%;
-  float:left; 
-  padding-left:1.5rem; 
+  float:left;
+  padding-left:1.5rem;
 }
 .form-right{
-  width:49%;  
-  float:left; 
-  padding-left:1.5rem;  
+  width:49%;
+  float:left;
+  padding-left:1.5rem;
 }
 .form-margin-top{
   margin-top: 40px;
@@ -519,7 +519,7 @@ form h4{
 .sec-btn-bottom{
   padding:15px 0 40px 0;
 }
-/*line-edit form*/  
+/*line-edit form*/
 .line-edit{
   border:1px solid #dadada;
   padding:1rem 1.2rem 0rem 1.2rem;
@@ -703,7 +703,7 @@ form.ui.form > .field > .ui.fluid.search.selection.dropdown{
 
 .ui.logo.image img{
   max-height:2.7rem;
-  max-width: 8rem; 
+  max-width: 8rem;
   padding-left:1rem;
   padding-top: 0.5rem;
 
@@ -726,32 +726,17 @@ form.ui.form > .field > .ui.fluid.search.selection.dropdown{
 
 .head-selector{width:10rem;float: right;}
 
-/*footer*/
-.page-footer, .container:after {
-  height: 5rem; 
-}
-.page-footer{
-    margin-top: 0px;
-    width: 100%;
-    float: left;
-    background-color: #364051;
-    color:#FFF;
-    text-align: center;
-    font-size: 12px !important;
-    padding-top: 2rem;
-}  
-
 /*side-bar*/
 .full > .ui.menu{
   z-index: 1;
-  width: 220px; 
+  width: 220px;
   height: 95%;
   float: left;
-  position: absolute;
+  position: fixed;
   }
 .ui.inverted.pointing.menu .active.item:after{background-color: #545D6B !important;}
 .ui.vertical.menu > .item:last-child:hover{border-radius:0;}
-.sticky{left: 0px; top: 0px; }
+.sticky{left: 0px; top: 0px; position:fixed }
 .menu > .ui.styled.accordion .title, .ui.styled.accordion .accordion .title{
   padding: 0;
   outline: none;
@@ -787,7 +772,7 @@ form.ui.form > .field > .ui.fluid.search.selection.dropdown{
   margin-top: 0px;
   margin-left: 220px;
 }
-.page-content{padding: 1rem 2rem 0rem 2rem;}
+.page-content{padding: 4.5rem 2rem 5rem 2rem;}
 
 /*breadcrumb*/
 .breadcrumb{
@@ -803,6 +788,20 @@ form.ui.form > .field > .ui.fluid.search.selection.dropdown{
   width:100%;*/
 
 }
+/*footer*/
+.page-footer, .container:after {
+  height: 5rem;
+}
+.page-footer{
+    margin-top: 0px;
+    width: 100%;
+    float: left;
+    background-color: #364051;
+    color:#FFF;
+    text-align: center;
+    font-size: 12px !important;
+    padding-top: 2rem;
+}
 
 /*fixed footer*/
 .btn-fix-bar{
@@ -810,9 +809,10 @@ form.ui.form > .field > .ui.fluid.search.selection.dropdown{
   border-top: 1px solid #DADADA;
   height: 60px;
   display: block;
-  position:absolute;
-  left:0px;
+  right:0px;
   bottom:0;
+  position: fixed;
+  clear:both;
   width:100%;
 }
 .btn-sec-bottom{padding: 10px 15px 10px 0px;}
@@ -832,7 +832,7 @@ form.ui.form > .field > .ui.fluid.search.selection.dropdown{
 /*Responsive*/
 /* Mobile iphone6*/
 /*table Responsive*/
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation : portrait) { 
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation : portrait) {
   /*Menu*/
 
   /*Table*/
@@ -901,7 +901,7 @@ form.ui.form > .field > .ui.fluid.search.selection.dropdown{
   width:100%;
 }
   .btn-sec.btn-right{width:100%;display: inline-block;}
-  .full > .ui.menu{min-height: 1800px}
+  .full > .ui.menu{min-height: 1800px;}
 
   }
 
