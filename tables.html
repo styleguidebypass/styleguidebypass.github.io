@@ -30,9 +30,9 @@
           <h2>LIVE UI KIT </h2>
           <small>LIVE STYLE GUIDE FOR ADMIN</small>
           <div class="ui tabular menu">
-              <a href="index.html" class="active item">Basic elements</a>
+              <a href="index.html" class="item">Basic elements</a>
               <a href="setting.html" class="item">Global Setting</a>
-              <a href="#" class="item">Tables</a>
+              <a href="#" class="active item">Tables</a>
               <a href="form.html" class="item">Forms</a>
               <a href="modal.html" class="item">Modals</a>
               <a href="pages.html" class="item">Pages</a>
@@ -53,7 +53,7 @@
          <div class="content">
          <table class="ui sortable striped table">
           <thead>
-            <tr> 
+            <tr>
               <th class="sorted descending">Name</th>
               <th>Date Joined</th>
               <th>E-mail</th>
@@ -111,7 +111,7 @@
             </tr>
           </tbody>
         </table>
-        
+
         <div class="pagi-line">
             <span class="pageinfo">
             showing
@@ -155,7 +155,7 @@
         </div><!--pagi-line-->
         </div><!--content ends-->
       </div><!--row ends-->
-      
+
 
        <div class="row">
        <h3>Table with multi-columns & label & actions</h3>
@@ -258,7 +258,7 @@
             </tr>
           </tbody>
         </table>
-        
+
         <div class="pagi-line">
             <span class="pageinfo">
             showing
@@ -302,8 +302,8 @@
         </div><!--pagi-line-->
         </div><!--content ends-->
       </div><!--row ends-->
-      
-      
+
+
       <div class="row">
        <h3>Table with buttons & filter</h3>
          <div class="content">
@@ -316,7 +316,7 @@
                 Action
             </button>
          </div>
-         
+
          <table class="ui striped table">
           <thead>
             <tr>
@@ -439,7 +439,7 @@
             </div>
         </div><!--content ends-->
       </div><!--row ends-->
-      
+
        <div class="row">
        <h3>Table with checkboxes (bulkaction)</h3>
          <div class="content">
@@ -459,8 +459,8 @@
 
              <div class="ui green labeled icon button btn-right">
                 <i class="plus left icon"></i>Create new
-             </div>  
-             
+             </div>
+
           </div><!--btn-sec ends-->
          <table class="ui sortable striped table">
           <thead>
@@ -539,10 +539,10 @@
               <td>sherry21@yahoo.com</td>
               <td>Yes</td>
             </tr>
-     
+
           </tbody>
         </table>
-        
+
         <div class="pagi-line">
             <span class="pageinfo">
             showing
@@ -602,7 +602,7 @@
       var table = $('<table class="ex-2"></table>');
       table.append('<thead><tr><th class="number">Number</th></tr></thead>');
       var tbody = $('<tbody></tbody>');
-      
+
       for(var i = 0; i<6000; i++) {
         tbody.append('<tr><td>' + Math.floor(Math.random() * 100) + '</td></tr>');
       }
