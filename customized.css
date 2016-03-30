@@ -137,7 +137,7 @@ a:hover{text-decoration: underline;}
 }
 .btn-text-action{color:#4183c4;}
 /*icon buttons*/
-
+.icon-grey{color:#DADADA;}
 /*light grey button*/
 .grey > i.icon {color:#888;}
 .icon.grey{
@@ -716,7 +716,7 @@ form.ui.form > .field > .ui.fluid.search.selection.dropdown{
 
 .btn-header-log{
   float: right;
-  padding-right: 2rem;
+  padding-right: .5rem;
   padding-top: .6rem;
 }
 .btn-header{
@@ -724,10 +724,11 @@ form.ui.form > .field > .ui.fluid.search.selection.dropdown{
   padding-right: 2rem;
   padding-top: .4rem;
 }
-.btn-header-log button{color: #dadada;}
-.btn-header-log button:hover{color: #FFF;}
+.btn-header-log .button{color: #dadada;}
+.btn-header-log .button:hover{color: #FFF;}
 
 .head-selector{width:10rem;float: right;}
+
 
 /*side-bar*/
 .full > .ui.menu{
@@ -772,7 +773,7 @@ form.ui.form > .field > .ui.fluid.search.selection.dropdown{
 .page-right{
   min-width: 30rem;
   min-height: 700px;
-  margin-top: 0px;
+  margin-top: -20px;
   margin-left: 220px;
 }
 .page-content{padding: 1.5rem 2rem 5rem 2rem;}
@@ -786,7 +787,7 @@ form.ui.form > .field > .ui.fluid.search.selection.dropdown{
   /*white*/
   background-color: #FFF;
   border-bottom: 1px solid #DADADA;
-  padding:3.8rem 0.6rem 0.6rem 1rem;
+  padding:0em 0em 0.6rem 1rem;
   width:100%;*/
 
 }

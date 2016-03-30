@@ -28,15 +28,56 @@
       <a class="ui logo icon image" href="index.html">
         <img src="logo.png">
       </a>
+      <div class="btn-header-log">
+        <div class="ui multiple dropdown">
+          <span class="button">My Account</span>
+        </div>
+      </div>
 
       <div class="btn-header-log">
-          <button class="btn-text">Help</button>
-      </div>
-      <div class="btn-header-log">
-          <button class="btn-text">My Account</button>
+        <div class="ui multiple dropdown">
+          <input type="hidden" name="filters">
+          <i class="help icon icon-grey"></i>
+          <span class="button">Help</span>
+          <div class="menu">
+            <div class="ui icon search input">
+              <i class="search icon"></i>
+              <input type="text" placeholder="Search tags...">
+            </div>
+            <div class="divider"></div>
+            <div class="header">
+              <i class="tags icon"></i>
+              Tag Label
+            </div>
+            <div class="scrolling menu">
+            <div class="item" data-value="important">
+              Important
+            </div>
+            <div class="item" data-value="announcement">
+              Announcement
+            </div>
+          </div>
+        </div>
       </div>
    </div>
   </div>
+
+
+  <div class="ui teal buttons actions">
+    <div class="simple ui primary button labeled icon dropdown" tabindex="0">
+      Actions
+      <i class="dropdown right icon"></i>
+      <div class="menu">
+        <div class="item">Create Standsheet</div>
+        <div class="item">Verify Standsheet</div>
+        <div class="item">Open Standsheet</div>
+        <div class="item">Close Standsheet</div>
+        <div class="item">Re-open Standsheet</div>
+      </div><!--menu-->
+    </div><!--simple end-->
+  </div><!--ui teal buttons ends-->
+
+
 
   <div class="pusher">
   <div class="full height">
