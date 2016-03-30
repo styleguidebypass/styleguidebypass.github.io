@@ -177,6 +177,7 @@ a:hover{text-decoration: underline;}
   background-image: -o-linear-gradient(top, #B2B6BC, #83878E);
   background-image: linear-gradient(to bottom, #B2B6BC, #83878E);
   border: 1px solid #7A7E86;
+  color:#FFFFFF;
 }
 .ui.cancel.button:hover {
   background: #83878E;
@@ -198,6 +199,7 @@ a:hover{text-decoration: underline;}
 }
 
 /*Dropdown*/
+.ui.labeled >.label{font-weight:400;}
 .dropdown-sm{width:50%;}
 .ui.form .field > label{margin: 0em 0em 8px 0em;}
 /*Popup (Tooltips)*/
@@ -246,6 +248,7 @@ a:hover{text-decoration: underline;}
     padding-bottom: 6px;
     padding-top: 6px;
 }
+.ui.pagination.menu{float:right;}
 
 .pagination {
     display: inline-block;
@@ -479,6 +482,7 @@ tr.greyrow2{background-color: #EEEEEE;}
     color: #4183c4;
   }
 /*Form*/
+.ui.form .field{margin: 1.25em 0em 1em;}
 form h4{
   font-size:1.2em;
   font-weight:200px;
@@ -733,7 +737,7 @@ form h4{
   outline: none;
 }
 .ui.vertical.menu .item > .header:not(.ui){margin: 0;}
-
+.ui.menu{border: none;box-shadow: none;}
 .ui.menu a{
   font-size: 1.1em;
   padding-top: 1.1rem;
