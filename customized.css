@@ -101,6 +101,7 @@ a:hover{text-decoration: underline;}
   font-weight: 200;
   padding:0 0 1rem 0;
 }
+.under-tab{padding:0 0 .1rem 1rem;}
 /*Event/Time selecter*/
 .timeselect{
   width:25%;
@@ -197,16 +198,7 @@ a:hover{text-decoration: underline;}
 }
 
 /*Dropdown*/
-select.ui.dropdown{
-  height:31px;
-}
-.ui.selection.dropdown{
-  min-height: 1.5em;
-  padding: 0.52em 2.6em 0.52em 1em;
-}
 .dropdown-sm{width:50%;}
-
-
 /*Popup (Tooltips)*/
 .ui.special.popup{
   background: rgba(51,51,51,0.8);
@@ -534,13 +526,6 @@ form h4{
 }
 
 .line-edit{background-color:#EEEEEE;}
-
-form.ui.form > .field > .ui.fluid.search.selection.dropdown{
-  min-height: 2em;
-  padding: 0.8em;
-}
-
-
 
 /*accordion form*/
 .ui.styled.accordion{width:inherit;}
