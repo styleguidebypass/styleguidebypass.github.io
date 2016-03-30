@@ -196,10 +196,10 @@
         </div><!--content-->
 
         <div class="content">
-         <table class="ui striped table">
+         <table class="ui sortable striped table">
           <thead>
             <tr>
-              <th>
+              <th class="sorted descending">
                 <div class="ui checkbox">
                     <input type="checkbox" name="example">
                     <label>Location Name</label>
@@ -210,27 +210,24 @@
               <th>Variances</th>
               <th>Actions</th>
             </tr>
-              <tr>
-              <th>
+            <tr>
+              <th class="no-sort">
               <div class="ui input filter">
-                <input type="text" placeholder="Name">
+                <input id="filter" type="text" placeholder="Name">
               </div>
               </th>
-              <th>
+              <th class="no-sort">
               <div class="ui input filter filter-sm">
-                <input type="text" placeholder="All">
+                <input id="filter" type="text" placeholder="All">
               </div>
               </th>
               <th>
-              <div class="ui input filter">
-                <input type="text" placeholder="Menu">
-              </div>
               </th>
               <th></th>
               <th><a href="#">Clear Filter</a></th>
             </tr>
           </thead>
-          <tbody>
+          <tbody class="searchable">
             <div class="ui accordion">
                 <tr>
                   <td>
@@ -507,6 +504,51 @@ $('.button')
     inline: true
   })
 ;
+</script>
+<!--sortable table-->
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="js/jquery.tablesort.min.js"></script>
+<script type="text/javascript">
+    $(function() {
+
+      var table = $('<table class="ex-2"></table>');
+      table.append('<thead><tr><th class="number">Number</th></tr></thead>');
+      var tbody = $('<tbody></tbody>');
+
+      for(var i = 0; i<6000; i++) {
+        tbody.append('<tr><td>' + Math.floor(Math.random() * 100) + '</td></tr>');
+      }
+      table.append(tbody);
+      $('.example.ex-2').append(table);
+
+      $('table').tablesort().data('tablesort');
+
+      $('thead th.number').data('sortBy', function(th, td, sorter) {
+        return parseInt(td.text(), 10);
+      });
+
+      });
+</script>
+
+<!--filterable table-->
+<script>
+$(document).ready(function () {
+
+(function ($) {
+
+    $('#filter').keyup(function () {
+
+        var rex = new RegExp($(this).val(), 'i');
+        $('.searchable tr').hide();
+        $('.searchable tr').filter(function () {
+            return rex.test($(this).text());
+        }).show();
+
+    })
+
+}(jQuery));
+
+});
 </script>
 <!--script end-->
 </body>
