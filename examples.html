@@ -28,6 +28,35 @@
       <a class="ui logo icon image" href="index.html">
         <img src="logo.png">
       </a>
+
+      <div class="ui dropdown">
+        <input type="hidden" name="filters">
+        <span class="text"><div class="ui green empty circular label"></div>Bypass World Event</span>
+        <div class="menu">
+              <div class="ui icon search input">
+                <input type="text" placeholder="Search event...">
+              </div>
+              <div class="divider"></div>
+              <div class="header">Events</div>
+              <div class="scrolling menu">
+                    <div class="item" data-value="1">
+                      <div class="ui green empty circular label"></div>
+                      Event 1
+                    </div>
+
+                    <div class="item" data-value="2">
+                      <div class="ui green empty circular label"></div>
+                      Event 2
+                    </div>
+
+                    <div class="item" data-value="3">
+                      <div class="ui green empty circular label"></div>
+                      Event 3
+                    </div>
+               </div><!--scrolling menu-->
+         </div><!--menu-->
+      </div><!--ui dropdown-->
+
       <div class="btn-header-log">
         <div class="ui multiple dropdown">
           <span class="button">My Account</span>
@@ -56,35 +85,19 @@
             <div class="item" data-value="announcement">
               Announcement
             </div>
-          </div>
-        </div>
-      </div>
-   </div>
-  </div>
-
-
-  <div class="ui teal buttons actions">
-    <div class="simple ui primary button labeled icon dropdown" tabindex="0">
-      Actions
-      <i class="dropdown right icon"></i>
-      <div class="menu">
-        <div class="item">Create Standsheet</div>
-        <div class="item">Verify Standsheet</div>
-        <div class="item">Open Standsheet</div>
-        <div class="item">Close Standsheet</div>
-        <div class="item">Re-open Standsheet</div>
-      </div><!--menu-->
-    </div><!--simple end-->
-  </div><!--ui teal buttons ends-->
-
-
+          </div><!--menu end-->
+        </div><!--ui-->
+      </div><!--header-log-->
+   </div><!--item-->
+ </div><!--page-header-->
 
   <div class="pusher">
   <div class="full height">
       <div class="ui vertical inverted sticky menu">
         <a class="item" href="#"><i class="float-left right-5 block layout icon"></i>Dashboard</a>
+
         <div class="item ui styled fluid accordion">
-            <div class="title header">
+            <div class="active title">
               <a class="item" href="#"><i class="float-left right-5 marker icon"></i>Location Control</a>
             </div>
 
@@ -113,8 +126,8 @@
               <a class="item" href="#">1</a>
             </div>
 
-            <div class="title">
-              <a class="active item" href="#"><i class="float-left right-5 cart icon"></i>Inventory</a>
+            <div class="title header">
+              <a class="item" href="#"><i class="float-left right-5 cart icon"></i>Inventory</a>
             </div>
 
             <div class="content menu">
@@ -173,11 +186,9 @@
               <a class="item" href="#"><i class="float-left right-5 setting icon"></i>Venue Settings</a>
             </div>
 
-            <div class="content menu">
-              <a class="item" href="#">1</a>
-            </div>
-          </div><!--item-->
-        </div><!--ui-->
+        <div class="content menu"><a class="item" href="#">1</a></div>
+     </div><!--item-->
+  </div><!--ui-->
 
     <div class="ui page page-right">
 

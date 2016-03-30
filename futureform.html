@@ -32,40 +32,63 @@
         <input type="hidden" name="filters">
         <span class="text"><div class="ui green empty circular label"></div>Bypass World Event</span>
         <div class="menu">
-          <div class="ui icon search input">
-            <input type="text" placeholder="Search event...">
-          </div>
-          <div class="divider"></div>
-          <div class="header">Events</div>
-          <div class="scrolling menu">
+              <div class="ui icon search input">
+                <input type="text" placeholder="Search event...">
+              </div>
+              <div class="divider"></div>
+              <div class="header">Events</div>
+              <div class="scrolling menu">
+                    <div class="item" data-value="1">
+                      <div class="ui green empty circular label"></div>
+                      Event 1
+                    </div>
 
-            <div class="item" data-value="1">
-              <div class="ui green empty circular label"></div>
-              Event 1
-            </div>
+                    <div class="item" data-value="2">
+                      <div class="ui green empty circular label"></div>
+                      Event 2
+                    </div>
 
-            <div class="item" data-value="2">
-              <div class="ui green empty circular label"></div>
-              Event 2
-            </div>
-
-            <div class="item" data-value="3">
-              <div class="ui green empty circular label"></div>
-              Event 3
-            </div>
-
-          </div><!--scrolling menu-->
-        </div><!--menu-->
+                    <div class="item" data-value="3">
+                      <div class="ui green empty circular label"></div>
+                      Event 3
+                    </div>
+               </div><!--scrolling menu-->
+         </div><!--menu-->
       </div><!--ui dropdown-->
 
       <div class="btn-header-log">
-          <button class="btn-text">My Account</button>
+        <div class="ui multiple dropdown">
+          <span class="button">My Account</span>
+        </div>
       </div>
+
       <div class="btn-header-log">
-          <button class="btn-text">Help</button>
-      </div>
-   </div>
-  </div>
+        <div class="ui multiple dropdown">
+          <input type="hidden" name="filters">
+          <i class="help icon icon-grey"></i>
+          <span class="button">Help</span>
+          <div class="menu">
+            <div class="ui icon search input">
+              <i class="search icon"></i>
+              <input type="text" placeholder="Search tags...">
+            </div>
+            <div class="divider"></div>
+            <div class="header">
+              <i class="tags icon"></i>
+              Tag Label
+            </div>
+            <div class="scrolling menu">
+            <div class="item" data-value="important">
+              Important
+            </div>
+            <div class="item" data-value="announcement">
+              Announcement
+            </div>
+          </div><!--menu end-->
+        </div><!--ui-->
+      </div><!--header-log-->
+   </div><!--item-->
+ </div><!--page-header-->
 
   <div class="pusher">
   <div class="full height">
