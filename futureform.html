@@ -4,7 +4,7 @@
     <title>Bypass Live style guide</title>
     <meta name="description" content="Flat UI Kit Free is a Twitter Bootstrap Framework design and Theme, this responsive framework includes a PSD and HTML version."/>
     <meta name="viewport" content="width=1000, initial-scale=1.0, maximum-scale=1.0">
-   
+
     <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
     <script type="text/javascript" src="js/angular.min.js"></script>
     <script src="semantic/dist/js/semantic.js"></script>
@@ -21,7 +21,7 @@
     <script src="https://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.13.4.js"></script>
 </head>
 <body>
-<div class="container"> 
+<div class="container">
   <div class="page-header sticky">
     <div class="item">
       <a class="ui logo icon image" href="index.html">
@@ -43,7 +43,7 @@
               <div class="ui green empty circular label"></div>
               Event 1
             </div>
-          
+
             <div class="item" data-value="2">
               <div class="ui green empty circular label"></div>
               Event 2
@@ -69,7 +69,7 @@
           <div class="ui primary labeled icon button toggle pre_btn_progress"><i class="arrow up icon"></i>Publish Menus</div>
       </div><!--actions-->
    </div>
-  </div> 
+  </div>
 
   <div class="pusher">
   <div class="full height">
@@ -171,19 +171,25 @@
   </div><!--ui-->
 
   <div class="ui page page-right">
+    <div class="ui breadcrumb">
+          <a class="section">Home</a>
+          <i class="right angle icon divider"></i>
+          <a class="section">Inventory</a>
+          <i class="right angle icon divider"></i>
+          <div class="active section">Standsheets</div>
+    </div>
     <div class="grid page-content">
       <div class="title-bar"><h2>Edit Page</h2></div>
+      <div class="ui tabular menu">
+         <a href="#" class="active item">General</a>
+         <a href="#" class="item">Menus</a>
+         <a href="#" class="item">Addons</a>
+         <a href="#" class="item">Inventory</a>
+      </div>
       <div class="title-bar"><h3>SubTitle</h3></div>
     <!--form start-->
       <div class="content">
       <div class="form-inside form-margin-top">
-         <div class="ui tabular menu">
-            <a href="#" class="active item">General</a>
-            <a href="#" class="item">Menus</a>
-            <a href="#" class="item">Addons</a>
-            <a href="#" class="item">Inventory</a>
-         </div>
-        
          <div class="split-form form-left">
           <form class="ui form">
             <h4>Item Properties</h4>
@@ -196,7 +202,7 @@
               <label>Name</label>
               <input type="text" name="Item name" placeholder="Item name">
             </div><!--field end-->
-           
+
             <div class="field">
               <label>Description</label>
               <textarea rows="3"></textarea>
@@ -292,7 +298,7 @@
         </div><!--split form end-->
 
       </div><!--form-inside-->
-      
+
         <div class="btn-fix-bar">
           <div class="btn-sec-bottom">
             <a href="futuretable.html"><button class="ui green button btn-right">Save</button></a>
@@ -305,7 +311,7 @@
 </div><!--ui-->
 </div><!--full-->
 </div><!--pusher-->
-</div><!--container-->  
+</div><!--container-->
 
 <!--script for datepicker-->
 <script src="js/customize.js"></script>

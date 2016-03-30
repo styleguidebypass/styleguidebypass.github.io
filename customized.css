@@ -247,7 +247,7 @@ select.ui.dropdown{
     padding: 0.53571429em 0.53571429em 0.53571429em;
 }
 /*Pagination*/
-.ui.menu {background: none;}
+.ui.menu {background: none;margin: 5rem 0em 2em;}
 .pagi-line {
     padding-bottom: 6px;
     padding-top: 6px;
@@ -506,7 +506,7 @@ form h4{
   padding-left:1.5rem;
 }
 .form-margin-top{
-  margin-top: 40px;
+  margin-top: 1em;
 }
 .ui.form .two.fields > .fields, .ui.form .two.fields > .form-input-sm{width:40%;}
 .ui.form .two.fields > .fields, .ui.form .two.fields > .form-input-lg{width:60%;}
@@ -894,7 +894,7 @@ form.ui.form > .field > .ui.fluid.search.selection.dropdown{
   .ui.pagination.menu{float:left;margin-top:10px;}
   .ui.segment{padding:3em 1em;}
   .sec-btn {padding: 10px 0 35px 0;}
-  .form-margin-top{margin-top:20px;}
+  .form-margin-top{margin-top:1em;}
   .split-form{width:100%}
   .form-right{padding:15px 0;}
   .form-left{padding:0;}
